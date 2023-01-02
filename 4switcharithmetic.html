@@ -1,0 +1,18 @@
+<script>
+    var a=prompt("enter ur operation which one u want ' + ' ' - ' ' * ' ' / ' ' % '")
+    var b=parseFloat(prompt("enter the first number "))
+    var c=parseFloat(prompt("enter the second number "))
+    switch(a){
+         case "+":document.write(" sum of "+b+"&"+c+"=" +(b+c));
+        break;
+        case "-":document.write(" difference of "+b+"&"+c+"="+ (b-c));
+        break;
+        case "*":document.write(" multiplication of "+b+"&"+c+"="+(b*c));
+        break;
+        case "/":document.write(" division of "+b+"&"+c+"="+ (b/c));
+        break;
+        case "%":document.write(" Remainder of "+b+"&"+c+"="+ (b%c));
+        break;
+        default :document.write("enter only valid operation like : (+ - * / %)")
+    }
+</script>
