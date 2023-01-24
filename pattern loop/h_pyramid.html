@@ -1,0 +1,18 @@
+<script>
+    let n=5 ,s="";
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n-i;j++){
+            s+=" ";
+        }
+        for(k=0;k<(2*i)-1;k++){
+            if(i==0 || i==n || k==0 || k==2*i-2){
+            s+= "*";}
+            else{
+                s+= " ";
+            }
+        }
+        s+="\n"
+
+    }
+    console.log(s)
+</script>

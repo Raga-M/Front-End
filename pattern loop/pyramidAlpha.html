@@ -1,0 +1,14 @@
+<script>
+    let n=27,s="";
+    for(i=0;i<n;i++){
+        for(j=0;j<n-i;j++){
+            s+=" ";
+        }
+        for(k=0;k<i;k++){
+            s+=String.fromCharCode(64+i)+" "
+        }
+        s+="\n"
+
+    }
+    console.log(s)
+</script>
