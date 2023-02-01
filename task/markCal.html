@@ -1,0 +1,55 @@
+<script>
+    var name=prompt("enter your name")
+    var phone=prompt("enter your phone number")
+    var id=prompt("enter your registration number")
+    var a=parseFloat(prompt("enter  subject 1 mark"))
+    var b=parseFloat(prompt("enter  subject 2 mark"))
+    var c=parseFloat(prompt("enter  subject 3 mark"))
+    var d=parseFloat(prompt("enter  subject 4 mark"))
+    var e=parseFloat(prompt("enter  subject 5 mark"))
+    var f=parseFloat(prompt("enter  subject 6 mark"))
+
+    function total(g,h,i,j,k,l)
+    {
+    var t=g+h+i+j+k+l;
+     return t;
+     }
+     function avg(x)
+     {
+     var y=x/6;
+     return y;
+     }
+     function grade(h)  {
+switch(true){
+case h>90: document.write('your belong to "A" grade');
+break;
+case h>80: document.write('your belong to "B" grade');
+break;
+case h>70: document.write('your belong to "C" grade');
+break;
+case h>60: document.write('your belong to "D" grade');
+break;
+case h>=50: document.write('your belong to "E" grade');
+break;
+default:document.write('your belong to "RA" grade');
+}}
+     var q=total(a,b,c,d,e,f);
+     var o=avg(q);
+    document.write("Your Total = "+q+"<br>"+"Your average = "+o+"<br>")
+    var a=grade(o)
+  
+
+    // if(o>90){
+    // document.write('your belong to "A" grade')}
+    //  else if(o>80){
+    //  document.write('your belong to "B" grade')}
+    // else if(o>70){
+    //  document.write('your belong to "B" grade')}
+    // else if(o>60){
+    //  document.write('your belong to "C" grade')}
+    // else if(o >=50){
+    //  document.write('your belong to "D" grade')}
+    //  else{
+    //  document.write('your belong to "RA" grade')}
+     
+</script>
