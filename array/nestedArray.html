@@ -1,0 +1,25 @@
+<script>
+    let program=[["HTML","CSS","JS"],["Java", "python", "C++", "c#"],["SQL", "MySQL", "SQLlite"]]
+    
+    document.write("Array= "+program+"<br><br>")
+    
+    // HTML,CSS,IS, Java, python, C++, c#,SQL,MySQL,SQLlite
+    document.write("length of an array= "+program.length+"<br><br>")
+    //3
+    
+    program[0][3]="Bootstrap" ;
+    
+    document.write("after add = "+program+"<br> <br>")
+    
+    // HTML,CSS,IS,Bootstrap, Java, python, C++, c#,SQL,MySQL,SQLlite
+    
+    program[0][2]="JavaScript" ;
+    
+    document.write("After Replace = "+program+"<br><br>")
+    //HTML, CSS, JavaScript, Bootstrap, Java, python, C++, c#,SQL,MySQL,SQLlite
+    
+    program[1].splice(0,2)
+    document.write("after slice =" +program)
+    //HTML, CSS, JavaScript, Bootstrap, C++, c#,SQL,MySQL,SQLlite
+    
+    </script>
