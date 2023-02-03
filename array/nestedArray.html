@@ -3,23 +3,46 @@
     
     document.write("Array= "+program+"<br><br>")
     
+    
     // HTML,CSS,IS, Java, python, C++, c#,SQL,MySQL,SQLlite
     document.write("length of an array= "+program.length+"<br><br>")
     //3
+    a=program[1].length;
+  document.write("length of inner array="+a+"<br><br>")
+    //4
     
-    program[0][3]="Bootstrap" ;
+    program[0].push("Bootstrap") ;
     
-    document.write("after add = "+program+"<br> <br>")
+    document.write("after push = "+program+"<br> <br>")    
     
     // HTML,CSS,IS,Bootstrap, Java, python, C++, c#,SQL,MySQL,SQLlite
     
-    program[0][2]="JavaScript" ;
+    program[0].splice(2,1,"JavaScript") ;
     
     document.write("After Replace = "+program+"<br><br>")
     //HTML, CSS, JavaScript, Bootstrap, Java, python, C++, c#,SQL,MySQL,SQLlite
     
     program[1].splice(0,2)
-    document.write("after slice =" +program)
+    document.write("after slice =" +program+"<br><br>")
     //HTML, CSS, JavaScript, Bootstrap, C++, c#,SQL,MySQL,SQLlite
-    
+
+    program[0].pop()
+    document.write("after pop at [0]="+program +"<br><br>")
+    //HTML,CSS,JavaScript,C++,c#,SQL,MySQL,SQLlite
+
+ program[0].splice(2,0,"reactjs","Angular")
+document.write("add new element in the middle = "+program+"<br><br>")
+
+//HTML,CSS,reactjs,Angular,JavaScript,C++,c#,SQL,MySQL,SQLlite
+
+program[0].unshift("Sass")
+
+document.write("add element at the start 'unshift' = "+program+"<br><br>")
+
+// Sass,HTML,CSS,reactjs,Angular,JavaScript,C++,c#,SQL,MySQL,SQLlite
+
+program[0].shift()
+document.write("remove element at the start 'shift' = "+program+"<br><br>")
+//HTML,CSS,reactjs,Angular,JavaScript,C++,c#,SQL,MySQL,SQLlite
+
     </script>

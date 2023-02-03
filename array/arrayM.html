@@ -1,0 +1,35 @@
+<script>
+   let a=[1,2,3,4]
+    b=[7,5,6]
+    p=[9,10,11]
+    c=a.concat(b,p)
+    document.write(c+"<br>")
+    //1,2,3,4,7,5,6,9,10,11
+
+    s=[...a,...b];
+    document.write(s+"<br>")
+ //1,2,3,4,7,5,6
+
+let d=a.reduce(function(t,n){
+return t+n;});
+    document.write(d+"<br>")
+    
+    //10
+ b.sort()
+document.write(b+"<br>")
+
+//5,6,7
+
+let e=a.map(function(e){
+return e*2})
+
+document.write(e+"<br>")
+   
+//2,4,6,8
+
+  let f=a.filter(function(e){
+  return e>2}) 
+  document.writeln(f)
+
+  //3,4
+</script>
