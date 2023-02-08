@@ -1,0 +1,28 @@
+<script>
+empname=[]
+empid=[] 
+empWH=[]
+empDes=[]
+for(i=0;i<5;i++){
+empname[i]=prompt("enter the emp name")}
+for(i=0;i<5;i++){
+empid[i]=prompt("enter the empid")}
+for(i=0;i<5;i++){
+empWH[i]=prompt("enter the working hours")}
+for(i=0;i<5;i++){
+empDes[i]=prompt("enter the designation ")
+}
+document.write("name "+" "+"ID "+" "+"HRS "+" "+"DES "+"<br><br>")
+for(i=0;i<5;i++){
+document.write(empname[i]+"  "+empid[i]+" "+empWH[i]+" "+empDes[i]+"<br><br>")
+}
+var emphrs=9
+document.write("Employer this are working less than 9hrs"+"<br><br>")
+for(i=0;i<5;i++)
+{
+if(emphrs>empWH[i]){
+
+document.write(empname[i]+" "+empid[i]+" "+empWH[i]+" "+empDes[i]+'<br><br>')
+}}
+
+</script>
