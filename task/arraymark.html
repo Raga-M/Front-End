@@ -1,0 +1,39 @@
+<script>
+    var Name=prompt("enter the name");
+    var rollNo=prompt("enter the rollNO")
+    let mark=[];
+    for(i=0;i<5;i++){
+    mark[i]=parseInt(prompt(`enter a subjects ${i+1}` ))
+}
+function total(m)
+{
+var t=0;
+for (i=0;i<5;i++){
+t+=m[i];
+ }
+return t;
+}
+function average(a){
+x=a/5;
+return x}
+
+tot=total(mark)
+avg=average(tot)
+document.write("name= "+Name+"<br>"+"RollNo"+rollNo+"<br>")
+document.write("total="+tot+"<br>"+"average="+avg+"<br>");
+function grade(h){
+switch(true){
+case h>90: document.write('your belong to "A" grade');
+break;
+case h>80: document.write('your belong to "B" grade');
+break;
+case h>70: document.write('your belong to "C" grade');
+break;
+case h>60: document.write('your belong to "D" grade');
+break;
+case h>=50: document.write('your belong to "E" grade');
+break;
+default:document.write('your belong to "RA" grade');
+}}
+grade(avg)
+</script>
