@@ -1,0 +1,20 @@
+<script>
+    function weekend(){
+        const date=new Date();
+     date.setDate(prompt("enter the date "));
+     date.setMonth(prompt("enter the month 0-11 "));
+     date.setFullYear(prompt("enter the Year "));
+     
+    d=date.getDay()
+    
+    if(d==0 || d==6){
+    document.write("weekend")
+}
+     else{
+     document.write("this is not a weekend")
+    }
+    
+     }
+    weekend();
+
+</script>
