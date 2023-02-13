@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+<script>
+    const emp=[{
+    name:"raga",
+    age:30},
+
+    {name:"ra",
+    age:20},
+
+   { name:"ga",
+    age:25
+}]
+const filter=emp.filter(({age})=> (age<26))
+console.log((filter));
+
+const result =filter.map((v)=> {return (`name=${v.name} age=${v.age}`)} )
+const selectDiv=document.getElementById("root")
+selectDiv.innerHTML=result;
+// const result=filter.map(({name,age})=>{
+// const sel=`${name}:${age}`
+// selectDiv.innerHTML+=sel;})
+</script>
+</body>
+</html>

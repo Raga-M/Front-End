@@ -1,0 +1,20 @@
+<script>
+    // function outer(){
+    //     let x=10
+    //    return function inner(y){          //===> closure
+    //     console.log(x+y)}
+    // }
+    // const i=outer();
+    // i(9);
+
+    const add=(function(){ 
+    let count=0;
+    console.log(count);             // ===> IIFE + Closure
+    return function(){
+        count++;
+    console.log(count)}})();
+
+    add()
+    add()
+    add()
+</script>
