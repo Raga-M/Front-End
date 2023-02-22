@@ -1,0 +1,32 @@
+<script>
+
+    let programs=new Array("java","JS","PHP","python");
+    document.write(programs[0]+"<br>")
+      
+    // => value in 0 index is print
+     document.write("length of array ="+programs.length+"<br>")
+     
+     /* => length i:e number of element present in an array */
+   
+     document.write("Index is ="+programs.indexOf("java")+"<br>")
+
+     /* => give index where the element is present in an array */
+    programs[4]="AWS";
+    document.write("After Add Array= ", programs+"<br>")
+      
+    //=> add element in an array
+     programs.splice(2,3);
+     document.write("After Delete= "+programs+"<br>")
+
+     //=> splice method : remove the element
+    a=programs.slice(1,3)
+    
+    document.write("slice value ="+a);
+    /* =>slice method : it gives element from index to index like slice */
+    </script>
+  
+   
+    
+  
+    
+    

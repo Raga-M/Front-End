@@ -1,0 +1,13 @@
+<script>
+    let a = [ 3, 45, 67, 89, 33, 22, 1 ]
+    for (let i = 0; i < a.length; i++) {
+        for (let j = i + 1; j < a.length; j++) {
+            if (a[ j ] < a[ i ]) {   // > give descending order
+                let t = a[ j ];
+                a[ j ] = a[ i ];
+                a[ i ] = t;
+            }
+        }
+    }
+    document.write(a)
+</script>
