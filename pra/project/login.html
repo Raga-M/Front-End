@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>login</title>
+    <style>
+        body {
+             background-image: url("image/bg.jpeg");
+       
+            background-size:100% 100vh;
+        }
+
+         .header {
+            text-align: center;
+            color: red;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100hv;
+        }
+
+        .form {
+            background:linear-gradient(to bottom,gray,rgb(28, 27, 27));
+            margin: 0 40%;
+            border-radius: 25px;
+            box-shadow: 15px 15px 10px   black;
+        }
+
+    
+
+        a {
+            color: gray;
+        }
+     
+
+        input {
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(225, 218, 218);
+            font-size: larger;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        button a {
+            text-decoration: none;
+            color: beige;
+        }
+        button {
+            background: linear-gradient(to right, rgb(6, 6, 6), rgb(237, 17, 17));
+            color: beige;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            padding: 7px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background: linear-gradient(to right, rgb(237, 17, 17), rgb(6, 6, 6));
+        }
+
+        button a {
+            text-decoration: none;
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header">LOG IN</h1>
+    <h3 class="header">to your Royal Enfield account</h3>
+    <form class="form">
+        <br><br>
+        <input type="text" class="name" id="name" placeholder="Username"  required><br><br>
+
+        <input type="password" class="password" id="password" placeholder="Password" required><br>
+        <a href="#">forgot password?</a> <br>
+        <a  class="newaccount" href="signup.html">Create New Account!</a><br>
+        <button class="btn" onclick="login()">Login</button><br>
+        <button><a href="Royal.html">Home</a></button><br>
+    </form>
+    <script >
+      
+            
+       
+        function login() {
+        
+            alert("Log in sucessfully")
+            
+        }
+
+    </script>
+</body>
+
+</html>

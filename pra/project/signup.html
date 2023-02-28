@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>login</title>
+    <style>
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: red;
+
+        }
+
+        button {
+            background: linear-gradient(to right, rgb(6, 6, 6), rgb(237, 17, 17));
+            color: beige;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            padding: 7px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background: linear-gradient(to right, rgb(237, 17, 17), rgb(6, 6, 6));
+        }
+
+        button a {
+            text-decoration: none;
+            color: beige;
+        }
+
+        body {
+
+         
+            transform: translate(30%, 0);
+
+            background-image: url("image/bg1.avif");
+       
+            background-size:100% 100vh;
+            overflow: hidden;
+     
+         
+        }
+       
+       
+
+        form {
+            background-color: black;
+            padding-left: 2%;
+            margin: 0 53% 0 0;
+            border-radius: 3%;
+            box-shadow: 8px 8px 6px red;
+            color: rgb(237, 17, 17);
+        }
+
+        input[type="text"],
+        [type="password"],
+        [type="tel"] {
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid white;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+
+    header {
+/* background-color: black; */
+            color:red;
+            margin-right: 73%;
+            padding-left: 2%;
+            border-radius: 4%;
+        }
+
+        input {
+            border-radius: 1.5%;
+        }
+
+        a {
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(232, 94, 94);
+        }
+
+        input {
+            font-size: medium;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1 class="header">Sign Up</h1>
+    <h3 class="header">to create a new Royal Enfield account</h3></header>
+    <form class="form">
+        <br><br>
+
+
+        <input type="text" class="name" id="fname" placeholder="First Name" required>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" class="name" id="lname" placeholder="Last Name" required><br><br>
+
+
+        <input type="password" class="password" id="password" placeholder="Password" required>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" class="password" placeholder="Re enter Password" required><br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" class="name" id="male" name="gender" required><label for="male">Male</label>
+        <input type="radio" class="name" id="female" name="gender" required><label for="female">Female</label><br><br>
+
+        <input type="tel" class="phone" id="phone" placeholder="Phone Number"><br><br>
+        <label>Date of Birth</label><br>
+        <input type="date" class="date" id="date" placeholder="Date of birth" required><br><br>
+        <label>Do you own a Royal Enfield Motorcycle ?</label><br><br>
+        <input type="radio" class="que" id="yes" name="que"><label for="yes">Yes</label>
+        <input type="radio" class="que" id="no" name="que"><label for="no">No</label><br><br>
+
+        <input type="checkbox" id="cb" required><label for="cb"> I accept all <strong><a href="">terms and
+                    conditions</a></strong> as
+            well as
+            <strong><a href="">privacy policy.</a></strong></label> <br><br>
+        <button class="btn" onclick="signUp()">Sign up</button>&nbsp;&nbsp;
+        <button><a href="Royal.html">Home</a></button><br><br>
+    </form>
+    <script>
+        function signUp() {
+            alert("sign up successfully")
+        }
+    </script>
+</body>
+
+</html>

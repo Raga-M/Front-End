@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form</title>
+    <style>
+        body {
+            background-color: lavender;
+        }
+
+        h1 {
+            color: royalblue;
+            text-align: center;
+        }
+
+        button {
+            background-color: dodgerblue;
+            color: beige;
+            border-radius: 10px;
+            font-weight: bold;
+            border-color: dodgerblue;
+            padding: 5px ;
+            cursor: pointer;
+       
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: large;
+        }
+
+        .form {
+            margin-left: 10px;
+        }
+
+        /* .form{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100hv;} */
+ a{
+    
+text-decoration: none;
+color: azure;}
+/* .btn{
+    margin-left: 8px;
+    
+    margin-top: 3px;} */
+
+    </style>
+</head>
+
+<body>
+    <h1>Enquiry Form</h1>
+    <form class="form" action="#" method="get">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter the Name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="eg:abc@gmail.com" required><br>
+        <label for="number">Phone Number:</label><br>
+        <input type="tel" name="phone" placeholder="phone number" id="number" required><br>
+      
+        <label for="Question">Questions:</label><br>
+        <textarea id="Question" placeholder="Enter your queries here" rows="4" cols="30"></textarea><br><br>
+        
+        <button>Send</button> 
+        <button class="btn"><a href="Royal.html">Home</a></button>
+    </form>
+   
+</body>
+
+</html>

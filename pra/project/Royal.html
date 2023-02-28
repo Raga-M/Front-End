@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/14292f36f2.js" crossorigin="anonymous"></script>
+    <title>Royal Enfield</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 10vh;
+            /* display: inline-block; */
+            position: sticky;
+            top: 0;
+            display: flex;
+            border: 1.8px solid white;
+            border-left: none;
+            border-right: none;
+
+        }
+
+        .heading {
+            padding: 7px;
+            margin: 5px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .navbar {
+
+            display: inline-block;
+            width: 70%;
+        }
+
+        ul {
+
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+
+        .navbar li a {
+
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 9px;
+            margin-top: 10px;
+
+
+        }
+
+        .navbar ul {
+            text-align: right;
+        }
+
+
+        .navbar li a:hover {
+            color: red;
+
+
+
+        }
+
+        .logo {
+            margin-left: 5px;
+            border-radius: 50%;
+        }
+
+        .para {
+            line-height: 1;
+        }
+
+        .para1 {
+            text-indent: 10%;
+            letter-spacing: 1px;
+            line-height: 2;
+
+        }
+
+        .logo:hover {
+            border: 1px solid red;
+        }
+
+        .banner {
+            width: 100%;
+            height: 45vh;
+        }
+
+        .bike {
+            width: 30%;
+            height: 35vh;
+        }
+
+        .row img {
+            float: left;
+
+            margin-right: 20px;
+        }
+
+        .bike {
+            border: 2px;
+            border-radius: 10px;
+
+
+        }
+
+        .column {
+            overflow: auto;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .bike:hover {
+            border: 1.2px solid red;
+            width: 31%;
+            height: 36vh;
+            filter: drop-shadow(3px 3px 6px white);
+        }
+
+        .h3red,
+        .red {
+            color: red
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .white {
+            color: white;
+        }
+
+        footer {
+            background-color: gainsboro;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+        }
+  
+        .socialicon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 1px 0 3px 0;   */
+        }
+
+        .socialicon li a i {
+            font-size: 22px;
+            color: black;
+
+            background-color: white;
+            border-radius: 50%;
+            padding: 1px;
+            margin: 5px;
+        }
+
+        .socialicon li a i:hover {
+            color: red;
+
+        }
+
+        .socialicon {
+            padding-left: 20px;
+        }
+/* 
+        .socialicon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .socialicon li {
+            display: inline-block;
+        }
+
+        footer hr {
+            border: 1px solid rgb(127, 127, 127);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            line-height: 1.5;
+            word-spacing: 2px;
+
+        }
+
+
+        .quick-links a {  
+            text-decoration: none;
+            color: black;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fa-twitter:hover {
+            color: #1d9bf0 !important;
+        }
+
+        .fa-facebook:hover {
+            color: #0574e7 !important;
+        }
+
+        #bk {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="image/logo" alt="logoimage">
+        <h1 class="heading"><strong><span>R</span>OYAL <span>E</span>NFIELD</strong></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" style="color: red;">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="form.html">Enquiry</a> </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="login.html">Log In</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img class="banner" src="image/banner.jpg" alt="banner image">
+        
+        
+        <marquee behavior="" direction="left">
+            <h4 class="red"><span class="white">(New !)</span> The Super Meteor 650 combines Royal Enfield's signature
+                styling,
+                retro design, and legendary reliability. The motorcycle has an parallel twin, 4-stroke,single overhead
+                cam!....</h4>
+        </marquee><br>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img class="bike" src="image/b1.jpg" alt="">
+                    <p class="para">
+                    <h3 class="red">Hunter 350</h3><br>
+                    <p class="para1 white">
+                        With its shorter wheelbase, lighter weight and tighter geometry,
+
+                        the Hunter's frame is fitted with a super maneuverable set of wheels,a hip retro-metro aesthetic
+
+                        and a 350cc J-engine that packs extra muscle for every hustle. </p>
+                    </p>
+
+                </div>
+            </div>
+            <br>
+            <hr><br>
+            <div class="row">
+                <div class="column">
+                    <img class="bike" src="image/b2.jpg" alt="">
+                    <p class="para">
+                    <h3 class="white">Royal Enfield INT 650</h3><br>
+                    <p class=" para1 red">
+                        With its shorter wheelbase, lighter weight and tighter geometry,
+
+                        the Hunter's frame is fitted with a super maneuverable set of wheels,a hip retro-metro aesthetic
+
+                        and a 350cc J-engine that packs extra muscle for every hustle. </p>
+                    </p>
+                </div>
+                <br>
+                <hr><br>
+                <div class="row">
+                    <div class="column">
+                        <img class="bike" src="image/b3.jpg" alt="">
+                        <p class="para">
+                        <h3 class="h3red">Hunter 350</h3><br>
+                        <p class="para1 white">
+                            With its shorter wheelbase, lighter weight and tighter geometry,
+
+                            the Hunter's frame is fitted with a super maneuverable set of wheels,a hip retro-metro
+                            aesthetic
+
+                            and a 350cc J-engine that packs extra muscle for every hustle.
+
+                        </p>
+                        </p>
+                    </div>
+                    <br>
+                    <hr><br>
+                    <div class="row">
+                        <div class="column">
+                            <img class="bike" src="image/b4.jpg" alt="">
+                            <p class="para">
+                            <h3 class="white">Hunter 350</h3><br>
+                            <p class="para1 red">
+                                With its shorter wheelbase, lighter weight and tighter geometry,
+
+                                the Hunter's frame is fitted with a super maneuverable set of wheels,a hip retro-metro
+                                aesthetic
+
+                                and a 350cc J-engine that packs extra muscle for every hustle. </p>
+                            </p>
+                        </div>
+                    </div> <br>
+                    <hr><br>
+                  
+                    <marquee behavior="" direction="right">
+                        <h3 class="white"><strong>Happy Riding... <i id="bk" class="fa-solid fa-motorcycle"></i>
+
+                            </strong></h3>
+                    </marquee>
+                    <footer class="footer">
+
+                        <div class="socialicon">
+                            <h3>Join us</h3>
+                            <ul>
+
+                                <li><a href="https://www.facebook.com/royalenfield" target="_blank"><i
+                                            class="fa-brands fa-facebook  "></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCyxUUHqmz9IiAnrROJc0mag"
+                                        target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="https://twitter.com/royalenfield" target="_blank"><i
+                                            class="fa-brands fa-twitter  "></i></a></li>
+                                <li><a href="https://www.instagram.com/royalenfield" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+
+                        </div>
+                        <hr>
+                        <div class="footer-content">
+                            <div class="motorcycle-list">
+                                <h4>Motorcycles</h4><br>
+                                <ul>
+                                    <li>Super Metero 650</li>
+                                    <li>Hunter 350</li>
+                                    <li>Scrum 411</li>
+                                    <li>Classic 350</li>
+                                    <li>Interceptor 650</li>
+                                </ul>
+                            </div>
+                            <div class="quick-links">
+                                <h4>Support</h4><br>
+                                <ul>
+                                    <li><a href="">Stores</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Book a Test Drive</a></li>
+                                    <li><a href="">Service Center</a></li>
+                                    <li><a href="">Become a Dealer</a></li>
+                                    <li><a href="">Distributer</a></li>
+                                </ul>
+                            </div>
+                            <div class="about-us">
+                                <h4>About Us </h4><br>
+                                <p>Since 1901</p>
+                            </div>
+                            <div class="media-center">
+                                <h4>Media Center</h4><br>
+                                <ul>
+                                    <li>In the press</li>
+                                    <li>Press Release</li>
+                                    <li>Product Picture</li>
+                                    <li>Events</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <div class="footer-bottom">
+
+                            <small>&copy;2023.Royal Enfield All Rights Reserved.| *T&C apply.</small>
+                            <small>Private Import Policy | Privacy | Terms & Conditions</small>
+                        </div>
+
+
+                    </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
