@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> திருக்குறள்</title>
+    <style>
+        
+        body{
+        background-color: gainsboro;}
+        h1{
+        color: dodgerblue;}
+        #kural{
+        font-size:larger;
+    letter-spacing: 0.6px;}
+        img{
+        width: 300px;
+        border: 2px solid gray;
+box-shadow: 8px 8px 8px black;
+    }
+    .float{
+    display: flex;
+justify-content: space-between;}
+p{
+text-indent: 80px;
+text-align: justify;}
+#btn{
+margin: 10px;
+padding: 10px;
+border: 1px solid dodgerblue;
+background-color: dodgerblue;
+color:white;
+border-radius: 5px;
+position: fixed;
+top:80vh;
+cursor: pointer;
+transition: 1s;
+box-shadow: 5px 5px 5px black;}
+
+#btn:hover{
+background-color: rgb(2, 46, 90);
+transform: rotateY(360deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="float"><h1>   திருக்குறள் </h1>
+    <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/thiruvalluvar-statue-1656168684_5914195b5d4e0e9a7b75.webp" alt="">
+</div> <div id="kural"></div>
+
+<button id="btn">அடுத்தது</button>
+    <script>
+        let k=Math.floor(Math.random()*1301)
+        if(k==0){
+        k++;}
+        const tk=document.getElementById('kural')
+        async function fetchData(){
+   
+        await fetch(`https://api-thirukkural.vercel.app/api?num=${k}`)
+        .then(res=>res.json())
+        .then(msg=>(tk.innerHTML=(`<pre>${k}: ${msg.line1}
+     ${msg.line2}
+     
+     <h1>விளக்கம்</h1></pre>
+ <p>${msg.tam_exp}</p>`)))}
+ fetchData()
+
+ let btn=document.getElementById('btn')
+ btn.addEventListener('click',()=>{
+location.reload();})
+    </script>
+</body>
+</html>
