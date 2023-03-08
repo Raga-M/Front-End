@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopClock</title>
+    <style>
+        body {
+            background-color: rgb(171, 166, 166);
+        }
+
+        #clock {
+            display: flex;
+
+            justify-content: center;
+
+
+            font-size: 50px;
+            /* margin: 2px solid black; */
+            background-color: black;
+            color: lawngreen;
+            width: 36%;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 10px 0;
+        }
+
+        .btn {
+            margin-left: 37%;
+
+
+        }
+
+        button {
+            border: 2px solid grey;
+            border-radius: 10px;
+
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            width: 70px;
+            height: 5vh;
+        }
+
+        .show {
+            color: red;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="clock">00 : 00 : 00 : 000</div>
+            <br><br>
+
+            <div class="btn">
+                <button id="start">Start</button>
+                <button id="record">Record</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+                <br><br>
+                <ol class="show">
+
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let ms = 0, secs = 0, mins = 0, hrs = 0;
+
+        const clk = document.getElementById('clock')
+        const start = document.getElementById('start')
+        const stay = document.getElementById('stop')
+        const reset = document.getElementById('reset')
+        const record = document.getElementById('record')
+        const show = document.querySelector('.show')
+        let interval;
+        console.dir(clk);
+        function display() {
+            ms++;
+
+            if (ms === 100) {
+                ms = 0;
+                secs++;
+                if (secs === 60) {
+                    secs = 0;
+                    mins++;
+
+                    if (mins === 60) {
+                        mins = 0;
+                        hrs++;
+                    }
+                }
+            }
+            clk.innerHTML = `${hrs < 10 ? "0" + hrs : hrs} : ${mins < 10 ? "0" + mins : mins} : ${secs < 10 ? "0" + secs : secs} : ${ms < 10 ? "0" + ms : ms} `
+        }
+
+        function Start() {
+
+            interval = setInterval(display, 10);
+
+        }
+        function Stop() {
+            clearInterval(interval);
+
+        }
+        function Reset() {
+            clearInterval(interval);
+            ms = 0, secs = 0, mins = 0, hrs = 0;
+            clk.innerHTML = '00 : 00 : 00 : 000';
+            show.innerHTML = '';
+        }
+        function Record() {
+            const r = clk.innerText;
+            show.innerHTML += `<li>${r}</li>`;
+        }
+        start.addEventListener('click', Start);
+        stay.addEventListener('click', Stop);
+        reset.addEventListener('click', Reset);
+        record.addEventListener('click', Record);
+    </script>
+</body>
+
+</html>
