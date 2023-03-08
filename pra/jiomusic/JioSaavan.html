@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JioSaavn</title>
+    <script src="https://kit.fontawesome.com/14292f36f2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(241, 29, 135);
+        }
+
+        .blank {
+            width: 100%;
+            height: 110px;
+            background-color: rgb(250, 40, 145);
+        }
+
+        .head {
+            display: flex;
+            color: white;
+            justify-content: space-between;
+        }
+
+        input {
+
+            margin: 2px;
+            border-radius: 20px;
+            height: 30px;
+            width: 200px;
+            border: 1px solid rgb(228, 31, 130);
+
+        }
+
+        h2 {
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+        }
+
+        .search .fa-solid {
+            width: 15px;
+            height: 24px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 9px 10px 0px 10px;
+            margin-top: 6px;
+            margin-right: 30px;
+            color: rgb(228, 31, 130);
+        }
+
+        ::placeholder {
+            font-weight: 500;
+            padding: 10px;
+            color: rgb(245, 8, 127);
+        }
+
+        /* .card-row{
+    display: flex;
+             flex-direction: column; 
+            justify-content: center;
+            align-content: center;
+          
+} */
+        .card {
+
+
+            background-color: white;
+            width: 30%;
+            height: 48vh;
+            border-radius: 18px;
+            margin-top: 30px;
+        }
+
+        .brand {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            height: 60px;
+            padding-top: 12px;
+        }
+
+        pre h2 {
+            color: rgb(228, 31, 130);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h5 {
+            color: rgb(65, 64, 64);
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* 
+        input[type="range"] {
+
+            width: 70%;
+
+             outline: none; 
+
+        } */
+
+        input[type=range] {
+
+            appearance: none;
+
+            border: none;
+            margin: 1px 0;
+            width: 80%;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+
+            height: 6px;
+            cursor: pointer;
+
+            box-shadow: 0px 0px 0px rgb(228, 31, 130);
+            background: rgb(228, 31, 130);
+            border-radius: 30px;
+            border: 1px solid rgb(228, 31, 130);
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 1px 1px 1px rgb(228, 31, 130);
+            border: 1px solid rgb(228, 31, 130);
+            height: 17px;
+            width: 18px;
+            border-radius: 20px;
+            background: #FFFDFC;
+            cursor: pointer;
+            appearance: none;
+            margin-top: -7px;
+        }
+
+
+        .icon-control .fa-solid {
+            cursor: pointer;
+            background-color: rgb(228, 31, 130);
+            color: white;
+            margin-left: 15px;
+            width: 14px;
+            height: 25px;
+            padding: 11px 11px 1px 11px;
+            margin-top: 6px;
+
+            border-radius: 50%;
+
+        }
+
+        .icon-control .fa-play,
+        .icon-control .fa-pause {
+
+            width: 18px;
+            height: 35px;
+            padding: 18px 18px 0 18px;
+        }
+
+        .icon {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: x-large;
+            cursor: pointer;
+
+        }
+
+        .icon .fa-solid {
+            width: 30px;
+            height: 40px;
+            padding: 16px 14px 0 18px;
+            border-radius: 7px;
+            background-color: white;
+            color: rgb(228, 31, 130);
+            transition: 1s;
+        }
+
+        .brand h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .icon .fa-solid:hover {
+            font-size: xx-large;
+            /* transform: scaleX(1.1); */
+            transform: rotate(360deg);
+
+            color: black;
+        }
+        @media screen and (max-width:1000px){
+
+.card {
+    width: 80%;
+    height: 38vh;}
+    .icon {
+    margin-top: 60px;}
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="blank"></div>
+    <div class="container">
+
+        <div class="head">
+            <h2>MUSIC</h2>
+            <div class="search"><input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <center>
+            <div class="card">
+                <div class="brand"> <img src="image/jio2.webp" alt="">
+                    <h1>JioSaavn</h1>
+                </div>
+                <pre><strong><h2> Title | album</h2></strong></pre>
+                <h5>singer1,singer2</h5>
+                <input type="range" id="duration" min="0" max="100" value="0">
+                <audio id="audio">
+                    <source src="wednesday Dance.mp3">
+                    <source src="Ranjithame.mp3">
+                    <source src="Thee Thalapathy.mp3">
+                </audio>
+
+
+                <div class="icon-control"><i class="fa-solid fa-backward"></i><i id="playbtn"
+                        class="fa-solid fa-pause"></i><i class="fa-solid fa-forward"></i></div>
+
+            </div>
+        </center>
+
+        <div class="icon"><i class="fa-solid fa-house"></i><i class="fa-solid fa-music"></i><i
+                class="fa-solid fa-heart"></i><i class="fa-solid fa-layer-group"></i><i
+                class="fa-solid fa-download"></i></div>
+    </div>
+    <script>
+        var audio = document.getElementById('audio');
+        var sources = audio.getElementsByTagName('source');
+        var play = document.querySelector('.fa-pause');
+        var btn = document.getElementById('playbtn');
+        var ff_btn = document.querySelector('.fa-forward');
+        var fb_btn = document.querySelector('.fa-backward');
+        var durationSlider = document.getElementById('duration');
+        var currentSource = 0;
+        play.addEventListener('click', () => {
+            if (audio.paused) {
+                btn.classList.remove('fa-pause');
+                btn.classList.add('fa-play');
+                audio.play();
+
+            }
+            else {
+                btn.classList.remove('fa-play');
+                btn.classList.add('fa-pause');
+                audio.pause();
+
+            }
+
+            play.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                play.style.transform = "scale(1)";
+            }, 200)
+        });
+        
+        audio.addEventListener('ended', function () {
+            currentSource++;
+            if (currentSource == sources.length) {
+                currentSource = 0;
+            }
+            audio.src = sources[ currentSource ].src;
+            audio.play();
+        });
+
+
+        ff_btn.addEventListener('click', () => {
+            audio.currentTime += 10;
+            ff_btn.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                ff_btn.style.transform = "scale(1)";
+            }, 200)
+        }
+        );
+        fb_btn.addEventListener('click', () => {
+            audio.currentTime -= 10;
+            fb_btn.style.transform = "scale(1.2)";
+            setTimeout(() => {
+                fb_btn.style.transform = "scale(1)";
+            }, 200)
+        })
+
+        audio.addEventListener('loadedmetadata', () => {
+            durationSlider.max = audio.duration;
+        })
+
+        durationSlider.addEventListener('input', () => {
+            audio.currentTime = durationSlider.value;
+        })
+        audio.addEventListener('timeupdate', () => {
+            durationSlider.value = audio.currentTime
+        });
+
+
+    </script>
+
+</body>
+
+</html>
