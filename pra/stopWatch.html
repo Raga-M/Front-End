@@ -93,7 +93,7 @@
 
         const clk = document.getElementById('clock')
         const start = document.getElementById('start')
-        const stay = document.getElementById('stop')
+        const stop = document.getElementById('stop')
         const reset = document.getElementById('reset')
         const record = document.getElementById('record')
         const show = document.querySelector('.show')
@@ -118,29 +118,31 @@
             clk.innerHTML = `${hrs < 10 ? "0" + hrs : hrs} : ${mins < 10 ? "0" + mins : mins} : ${secs < 10 ? "0" + secs : secs} : ${ms < 10 ? "0" + ms : ms} `
         }
 
-        function Start() {
-
+        function s() {
+     if(!interval){
+       
             interval = setInterval(display, 10);
-
+}
         }
-        function Stop() {
+        function sp() {
             clearInterval(interval);
-
+             interval=null;
         }
-        function Reset() {
+        function r() {
             clearInterval(interval);
             ms = 0, secs = 0, mins = 0, hrs = 0;
             clk.innerHTML = '00 : 00 : 00 : 000';
             show.innerHTML = '';
         }
-        function Record() {
+        function rc() {
             const r = clk.innerText;
             show.innerHTML += `<li>${r}</li>`;
         }
-        start.addEventListener('click', Start);
-        stay.addEventListener('click', Stop);
-        reset.addEventListener('click', Reset);
-        record.addEventListener('click', Record);
+      
+        start.addEventListener('click', s);
+        stop.addEventListener('click', sp);
+        reset.addEventListener('click', r);
+        record.addEventListener('click', rc);
     </script>
 </body>
 
