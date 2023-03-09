@@ -24,21 +24,7 @@ header {
    align-items: center;
    padding-left: 1rem;
 }
- @media screen  and (max-width:1000px) {
-.heading{
-    
-font-size:200%;
-
-display: flex;
-align-items: center;
-}
-.logo {
-    margin-left: 5px;
-    border-radius: 50%;
-    padding-top: 2px;
-    height:5vh;
-} 
-} 
+ 
 span {
     color: red;
 }
@@ -47,6 +33,7 @@ span {
 
     display: inline-block;
     width: 70%;
+    
 }
 
 ul {
@@ -97,49 +84,21 @@ ul {
 
 .icon{
     visibility: hidden;}
-    
-    @media screen and (max-width: 1000px)  {
-      nav ul {
-        flex-direction: column;
-        display: none;
-        
-      }
-      
-      nav li {
-        float: none;
-        
-      }
-      
-      
-      .icon {
-        visibility: visible;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 16px;
-        cursor: pointer;
-      }
-      .navbar li a:hover {
-        color: white;
-        background-color: rgba(244, 9, 9, 0.6);
-        border-radius:20px;
+
     
     
-    
-    }
-    }
     .icon {
 display: block;
 position: absolute;
-top:10px;
+top:15px;
 right: 1%;
-font-size: xx-large;
+font-size: x-large;
 padding: 2px 8px;
 cursor: pointer;
 border-radius: 0.5rem;
 
 border: 1px solid white;
+
 }
 .icon:hover{
   
@@ -378,3 +337,71 @@ figure img {
         transform: translateX(0);
     }
 }
+@media screen  and (max-width:1000px) {
+    .heading{
+        height: 2.5em;
+    font-size:70px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    }
+    .logo {
+        margin-left: 5px;
+        border-radius: 50%;
+        padding-top: 12px;
+        height:8vh;
+    } 
+    } 
+@media screen and (max-width: 1000px)  {
+    nav ul {
+     margin-top: 10%;
+      flex-direction: column;
+      display: none;
+      
+    }
+    
+    nav li {
+      float: none;
+      font-size: xxx-large;
+      padding: 30px;
+    }
+    
+    
+    .icon {
+      visibility: visible;
+      display: block;
+      position: absolute;
+      font-size: 4.5em;
+      top: 0;
+      right: 0;
+      margin: 30px;
+      /* width: 60px; */
+      border-radius: 20px;
+      
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .navbar li a:hover {
+      color: white;
+      background-color: rgba(244, 9, 9, 0.6);
+      border-radius:20px;
+  }
+  .column{
+display: flex;
+flex-direction: column;}
+.bike {
+    padding-bottom: 50px; 
+    padding-left:40px ;
+    width: 90%;
+    height: 35vh;
+}
+.bike:hover {
+    border: 0;
+    width: 90%;
+    height: 30vh;
+  
+ /* box-shadow: 3px 3px 3px gray;  */
+}
+.para1{
+padding: 0 40px;}
+  }
