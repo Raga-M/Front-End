@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/14292f36f2.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        } 
+
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 60px 0;
+        }
+
+        body {
+
+            background: url("image/banner.jpg") no-repeat;
+
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+       
+
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+          
+            /* opacity: 0.7; */
+        }
+
+
+
+        .card {
+            width: 22%;
+            background-color: #fff;
+            border: 1px solid grey;
+            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            width: 23%;
+            
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.85);
+        }
+
+        .card img {
+            width: 100%;
+
+            object-fit: contain;
+            padding-bottom: 10px;
+        }
+
+        @media screen and (max-width:760px) {
+            .row {
+                display: flex;
+                flex-direction: column;
+                margin: 4em;
+            }
+        
+.map{
+width: 20vw;}
+            .card {
+                width: 80%;
+                margin: 1em;
+            }
+
+            .card:hover {
+                width: 82%;
+
+                box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.85);
+            }
+        }
+
+        .para {
+            color: beige;
+            font-size: large;
+
+            padding: 10px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            text-indent: 100px;
+            text-align: justify;
+        }
+
+        .hh {
+            color: red;
+        }
+
+        .card h3,
+        .card p,
+        .card a {
+            margin: 15px;
+            text-align: justify;
+            
+        }
+        .card p{
+        text-indent: 50px;}
+        .card h1{
+        padding: 10px;}
+        .blank {
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to right, black, grey, black)
+        }
+
+        .card a {
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: black;
+            color: aliceblue;
+            transition: 0.8s;
+
+        }
+
+        .card a:hover {
+            background-color: rgb(65, 65, 65);
+
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="image/logo" alt="logoimage">
+        <h1 class="heading"><span>R</span>OYAL <span>E</span>NFIELD</h1>
+        <nav class="navbar">
+            <div class="icon">&#9776;</div>
+            <ul>
+                <li><a href="Royal.html">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="form.html">Enquiry</a> </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="login.html">Log In</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="hh">Monutain Star Zlatin</h1>
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis molestiae possimus nesciunt
+            repudiandae rem
+            quas, tempora eveniet eligendi quia perferendis ab quidem reiciendis eum fugit vero placeat blanditiis
+            obcaecati quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ullam quos veritatis ea rem
+            eligendi consequuntur illum aut, cupiditate possimus, laborum aspernatur numquam. Commodi, ratione natus?
+            Ipsum aperiam iure laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo temporibus
+            velit blanditiis sint, earum ducimus a maxime unde asperiores praesentium, numquam ab, id aperiam delectus
+            optio quo tenetur expedita exercitationem!</p>
+        <div class="blank"></div>
+        <div class="row">
+            <div class="card">
+                <img src="image/service1.jpg" alt="">
+
+                <h3>Service Center</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a vero numquam incidunt! Unde quasi
+                    odio sint, sunt quos harum voluptates tempore nostrum qui dignissimos provident aliquid, sed, sit
+                    officia!</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/service4.jpg" alt="">
+
+                <h3>Hunter 360</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a vero numquam incidunt! Unde quasi
+                    odio sint, sunt quos harum voluptates tempore nostrum qui dignissimos provident aliquid, sed, sit
+                    officia!</p>
+                <a href="#">learn more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/service3.jpg" alt="">
+
+                <h3>LT 420</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a vero numquam incidunt! Unde quasi
+                    odio sint, sunt quos harum voluptates tempore nostrum qui dignissimos provident aliquid, sed, sit
+                    officia!</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+        <div class="blank"></div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum a impedit aliquam laborum velit
+            culpa. Eaque explicabo laborum debitis placeat magnam est veniam facilis, itaque sed voluptatum quos
+            dignissimos reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas magni asperiores
+            reprehenderit, quisquam, doloribus molestias, architecto optio soluta dolorem ratione dolorum fugiat quaerat
+            excepturi cum neque est. Quae, accusamus! Nisi?</p>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facere beatae quisquam
+            tempora consectetur
+            consequuntur totam distinctio laboriosam cumque vel perspiciatis laborum accusamus expedita ipsum molestiae
+            obcaecati, fuga enim aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, rerum saepe in
+            omnis accusantium illum odio sed. Facere ratione maxime id fuga, sapiente doloremque sunt corrupti autem
+            consectetur tenetur ea.</p>
+    </div>
+    <footer class="footer">
+
+        <div class="socialicon">
+            <h3>Join us</h3>
+            <ul>
+
+                <li><a href="https://www.facebook.com/royalenfield" target="_blank"><i
+                            class="fa-brands fa-facebook  "></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCyxUUHqmz9IiAnrROJc0mag" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://twitter.com/royalenfield" target="_blank"><i
+                            class="fa-brands fa-twitter  "></i></a></li>
+                <li><a href="https://www.instagram.com/royalenfield" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+            </ul>
+
+        </div>
+        <hr>
+        <div class="footer-content">
+            <div class="motorcycle-list">
+                <h4>Motorcycles</h4><br>
+                <ul>
+                    <li>Super Metero 650</li>
+                    <li>Hunter 350</li>
+                    <li>Scrum 411</li>
+                    <li>Classic 350</li>
+                    <li>Interceptor 650</li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h4>Support</h4><br>
+                <ul>
+                    <li><a href="">Stores</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Book a Test Drive</a></li>
+                    <li><a href="">Service Center</a></li>
+                    <li><a href="">Become a Dealer</a></li>
+                    <li><a href="">Distributer</a></li>
+                </ul>
+            </div>
+            <div class="about-us">
+                <h4>About Us </h4><br>
+                <p>Since 1901</p>
+            </div>
+            <div class="media-center">
+                <h4>Media Center</h4><br>
+                <ul>
+                    <li>In the press</li>
+                    <li>Press Release</li>
+                    <li>Product Picture</li>
+                    <li>Events</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Location</h4>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9924875021593!2d80.2465223137899!3d12.972332118374577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de206a1096d%3A0x20e3375a0aeea05c!2sRoyal%20Enfield%20Service%20Center%20-%20Company%20Service%20Center!5e0!3m2!1sen!2sin!4v1677591468842!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer-bottom">
+
+            <small>&copy;2023.Royal Enfield All Rights Reserved.| *T&C apply.</small>
+            <small>Private Import Policy | Privacy | Terms & Conditions</small>
+        </div>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

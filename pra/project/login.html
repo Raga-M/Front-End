@@ -23,17 +23,25 @@
             height: 100hv;
         }
 
-        .form {
+         /* .form {
             background:linear-gradient(to bottom,gray,rgb(28, 27, 27));
-            margin: 0 40%;
+            margin: auto 40%;
             border-radius: 25px;
             box-shadow: 15px 15px 10px   black;
+            color: rgb(237, 17, 17)
+        }  */
+
+        form {
+            background: linear-gradient(to top,rgb(0, 0, 0) ,rgb(117, 116, 116));
+            padding-left: 2%;
+             margin: auto 39%;
+            border-radius: 25px;
+            box-shadow: 8px 8px 6px rgba(18, 18, 18, 0.7);
+            color: rgb(237, 17, 17);
         }
 
-    
-
         a {
-            color: gray;
+            color: red;
         }
      
 
@@ -42,9 +50,9 @@
             border-top: none;
             border-left: none;
             border-right: none;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid rgb(250, 247, 247);
             cursor: pointer;
-            color: white;
+            color: red;
         }
 
         ::placeholder {
@@ -68,16 +76,55 @@
             border: none;
             padding: 7px;
             cursor: pointer;
+            border: 1px solid rgb(244, 26, 2);
+            box-shadow: 2px 2px 1px rgba(237, 203, 203,0.6);
 
         }
-
+        ::placeholder {
+            color: rgb(232, 94, 94);
+        }
         button:hover {
-            background: linear-gradient(to right, rgb(237, 17, 17), rgb(6, 6, 6));
+            background: linear-gradient(to right, rgb(237, 17, 17) , rgb(6, 6, 6) );
         }
 
         button a {
             text-decoration: none;
             color: beige;
+        }
+        @media screen and (max-width:1000px){
+            form {
+       
+             padding-left: 2%;
+             margin: 10% auto;
+             width: 80%; 
+             height: 70vh;
+             border-radius: 60px;
+             box-shadow: 25px 25px 25px rgb(0, 0, 0);
+           
+        } 
+        input{
+             
+            margin: 5%;
+        width: 70%;
+    }
+    input[type="text"], input[type="password"]{
+    font-size: xxx-large;
+}
+    a{
+    padding:10px ;
+    font-size: 55px;
+    }
+    button, button a{
+    width: 25%;
+font-size:50px ;
+padding: 15px;
+margin-top: 5% ;
+border-radius: 25px;}
+::placeholder{
+  font-size: 55px;
+}
+h1,h3{
+font-size: 70px;}
         }
     </style>
 </head>
@@ -90,9 +137,9 @@
         <input type="text" class="name" id="name" placeholder="Username"  required><br><br>
 
         <input type="password" class="password" id="password" placeholder="Password" required><br>
-        <a href="#">forgot password?</a> <br>
+        <a href="#">Forgot Password ?</a> <br>
         <a  class="newaccount" href="signup.html">Create New Account!</a><br>
-        <button class="btn" onclick="login()">Login</button><br>
+        <button class="btn" >Login</button><br>
         <button><a href="Royal.html">Home</a></button><br>
     </form>
     <script >

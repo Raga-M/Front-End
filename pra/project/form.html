@@ -8,7 +8,16 @@
         body {
             background-color: lavender;
         }
-
+        .container{
+        display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 35%;
+    border-radius: 10px  ;
+/* align-content: center;
+align-items: center;*/
+        }
         h1 {
             color: royalblue;
             text-align: center;
@@ -22,9 +31,17 @@
             border-color: dodgerblue;
             padding: 5px ;
             cursor: pointer;
-       
+       transition: 0.8;
         }
+/* button::before {
+content: '';
 
+background-color: red;
+width:50% ;}
+button::after {
+content: '';
+background-color: black;
+width:50% ;} */
         input {
             padding: 5px;
             border-radius: 5px;
@@ -58,6 +75,7 @@ color: azure;}
 
 <body>
     <h1>Enquiry Form</h1>
+    <div class="container">
     <form class="form" action="#" method="get">
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Enter the Name" required><br>
@@ -72,7 +90,7 @@ color: azure;}
         <button>Send</button> 
         <button class="btn"><a href="Royal.html">Home</a></button>
     </form>
-   
+</div>
 </body>
 
 </html>

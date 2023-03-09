@@ -20,9 +20,12 @@
             padding: 7px;
             cursor: pointer;
 
+            border-bottom: 2px solid white;
+            border-bottom-right-radius: 5px;
         }
 
         button:hover {
+        
             background: linear-gradient(to right, rgb(237, 17, 17), rgb(6, 6, 6));
         }
 
@@ -36,9 +39,9 @@
          
             transform: translate(30%, 0);
 
-            background-image: url("image/bg1.avif");
-       
-            background-size:100% 100vh;
+            background-image: url("image/bg1.avif") ;
+       background-repeat: no-repeat;
+            background-size:100vw 100vh;
             overflow: hidden;
      
          
@@ -51,7 +54,7 @@
             padding-left: 2%;
             margin: 0 53% 0 0;
             border-radius: 3%;
-            box-shadow: 8px 8px 6px red;
+            box-shadow: 8px 8px 6px rgba(254,0,0,0.7);
             color: rgb(237, 17, 17);
         }
 
@@ -95,6 +98,42 @@
             font-size: medium;
             color: red;
         }
+         @media screen and (max-width:1000px){
+            form {
+       
+             padding-left: 2%;
+             margin: 10% auto;
+             width: 80%; 
+             height: 100vh;
+             border-radius: 60px;
+             box-shadow: 25px 25px 25px rgb(0, 0, 0);
+           
+        } 
+         input{
+             
+            /* margin: 5%; */
+        width: 60%; 
+        
+    }  
+    /* input[type="text"], input[type="password"]{
+    font-size: xxx-large;
+} */
+    a{
+    padding:10px ;
+    font-size: 55px;
+    }
+    button, button a{
+    width: 25%;
+font-size:50px ;
+padding: 15px;
+margin-top: 5% ;
+border-radius: 25px;}
+::placeholder{
+  font-size: 55px;
+}
+/* h1,h3{
+font-size: 70px;} */
+        } 
     </style>
 </head>
 
