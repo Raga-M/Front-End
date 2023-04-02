@@ -97,7 +97,7 @@ cursor: pointer;
 header .ham .bar{
     display: none;
 height: 2px;
-width: 25px;
+width: 30px;
 position: relative;
 background-color: white;
 margin-right: 20px;
@@ -338,7 +338,7 @@ figure img {
         transform: translateX(0);
     }
 }
-  @media screen  and (max-width:1000px) {
+  @media screen  and (max-width:760px) {
     .heading{
         height: 9vh;
     font-size:250%;
@@ -354,7 +354,7 @@ figure img {
         height:8vh;
     } 
     }   
-@media screen and (max-width:1000px)  {
+@media screen and (max-width:760px)  {
     nav ul {
       
       flex-direction: column;
