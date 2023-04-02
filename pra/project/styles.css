@@ -96,11 +96,11 @@ cursor: pointer;
 }
 header .ham .bar{
     display: none;
-height: 2px;
-width: 30px;
+height: 4px;
+width: 40px;
 position: relative;
 background-color: white;
-margin-right: 20px;
+margin-right: 50px;
  z-index: 5; 
 }
 header .ham .bar::after,
@@ -115,11 +115,11 @@ header .ham .bar::before{
 }
 header .ham .bar::after{
  
-top:8px;
+top:14px;
 }
 header .ham .bar::before{
     
-bottom: 8px;}
+bottom: 14px;}
 
 header nav.show .ham .bar::before{
     top:0;
@@ -338,7 +338,7 @@ figure img {
         transform: translateX(0);
     }
 }
-  @media screen  and (max-width:760px) {
+  @media screen  and (max-width:1000px) {
     .heading{
         height: 9vh;
     font-size:250%;
@@ -354,7 +354,7 @@ figure img {
         height:8vh;
     } 
     }   
-@media screen and (max-width:760px)  {
+@media screen and (max-width:1000px)  {
     nav ul {
       
       flex-direction: column;
@@ -369,17 +369,22 @@ figure img {
       float: none;
       font-size: 150%;
       padding: 10px;
+      font-size: 2rem;
     }
     nav.show .ham  ul {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         background-color: rgba(0,0,0,0.85);
         align-items: center;
+        gap:5%;
+        /* align-content: space-evenly; */
         position: fixed;
         top:0;
         right: 0;
         width: 100%;
-        padding: 0;
+        height: 100vh;
+    
         z-index: 1;
         } 
         
@@ -390,6 +395,7 @@ figure img {
         text-align: left;
         padding: 14px 16px;
         text-decoration: none;
+       
         }
     
       /*nav.show .ham .bar{
