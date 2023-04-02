@@ -11,13 +11,22 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-        background-color: gainsboro;}
+        background-color: gainsboro;
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/thiruvalluvar-statue-1656168684_5914195b5d4e0e9a7b75.webp");
+ /* background-color:gray; */
+    background-size:cover;}
         h1{
         color: dodgerblue;}
         #kural{
         font-size:larger;
     letter-spacing: 0.6px;
-line-height: 30px;}
+line-height: 30px;
+background-color: rgba(0,0,0,0.5);
+margin: 5%;
+border-radius:20px;
+/* border:2px solid white ; */
+color: antiquewhite;
+box-shadow: 10px 10px 30px black;}
         img{
             overflow: hidden;
         width: 300px;
@@ -30,7 +39,8 @@ justify-content: space-between;}
 p{
 text-indent: 80px;
 text-align: justify;
-padding: 20px;}
+padding: 20px;
+font-size: 1.4rem;}
 #btn{
 margin: 10px;
 padding: 10px;
@@ -38,8 +48,8 @@ border: 1px solid dodgerblue;
 background-color: dodgerblue;
 color:white;
 border-radius: 5px;
-position: fixed;
-top:85%;
+/* position: fixed;
+top:85%; */
 
 cursor: pointer;
 transition: 1s;
@@ -49,21 +59,27 @@ box-shadow: 5px 5px 5px black;}
     #btn{
     top:70%;
     left:5%;}
-}
+ body{
+background-size:100vw 100%;
+background-repeat:no-repeat;}
 #kural{
         font-size:medium;
     letter-spacing: 0.6px;
-padding: 5px;}
+padding: 5px;
+margin: 1%;
+/* color: white;
+background-color: rgba(0,0,0,0.5); */
+}
 #btn:hover{
 background-color: rgb(2, 46, 90);
-transform: rotateY(360deg);
-}
+
+}}
 
     </style>
 </head>
 <body>
     <div class="float"><h1>   திருக்குறள் </h1>
-    <img src="https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/thiruvalluvar-statue-1656168684_5914195b5d4e0e9a7b75.webp" alt="">
+    
 </div> <div id="kural"></div>
 
 <button id="btn">அடுத்தது</button>
@@ -76,13 +92,18 @@ transform: rotateY(360deg);
    
     const response=await fetch(`https://api-thirukkural.vercel.app/api?num=${k}`)
       const res=await response.json();
-      
-    tk.innerHTML=(`<pre>குறள்:${k}
+      console.log(res);
+    tk.innerHTML=(`<pre>குறள்:${k}  பால்:<b>${res.sect_tam}</b>
 ${res.line1}
 ${res.line2}
      
      <h1>விளக்கம்</h1></pre>
- <p>${res.tam_exp}</p>`)}
+ <p>${res.tam_exp}</p>
+ <h1>In English</h1>
+
+ <p>${res.eng}</p>
+ <h1>Explaination</h1>
+ <p>${res.eng_exp}</p>`)}
  fetchData()
 
  let btn=document.getElementById('btn')
