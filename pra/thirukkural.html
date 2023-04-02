@@ -14,6 +14,7 @@
         background-color: gainsboro;
     background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/thiruvalluvar-statue-1656168684_5914195b5d4e0e9a7b75.webp");
  /* background-color:gray; */
+ background-position: fixed;
     background-size:cover;}
         h1{
         color: dodgerblue;}
@@ -27,6 +28,9 @@ border-radius:20px;
 /* border:2px solid white ; */
 color: antiquewhite;
 box-shadow: 10px 10px 30px black;}
+.exp{
+    font-size:larger;
+}
         img{
             overflow: hidden;
         width: 300px;
@@ -36,7 +40,7 @@ box-shadow: 8px 8px 8px black;
     .float{
     display: flex;
 justify-content: space-between;}
-p{
+.para{
 text-indent: 80px;
 text-align: justify;
 padding: 20px;
@@ -48,8 +52,9 @@ border: 1px solid dodgerblue;
 background-color: dodgerblue;
 color:white;
 border-radius: 5px;
-/* position: fixed;
-top:85%; */
+ /* position: fixed;
+ bottom: 0; */
+
 
 cursor: pointer;
 transition: 1s;
@@ -61,6 +66,7 @@ box-shadow: 5px 5px 5px black;}
     left:5%;}
  body{
 background-size:100vw 100%;
+background-position: fixed;
 background-repeat:no-repeat;}
 #kural{
         font-size:medium;
@@ -69,6 +75,9 @@ padding: 5px;
 margin: 1%;
 /* color: white;
 background-color: rgba(0,0,0,0.5); */
+}
+.exp{
+    font-size:medium;
 }
 #btn:hover{
 background-color: rgb(2, 46, 90);
@@ -82,7 +91,7 @@ background-color: rgb(2, 46, 90);
     
 </div> <div id="kural"></div>
 
-<button id="btn">அடுத்தது</button>
+<button id="btn">அடுத்தது/Next</button>
     <script>
         let k=Math.floor(Math.random()*1301)
         if(k==0){
@@ -98,12 +107,12 @@ ${res.line1}
 ${res.line2}
      
      <h1>விளக்கம்</h1></pre>
- <p>${res.tam_exp}</p>
+ <p class="exp">${res.tam_exp}</p>
  <h1>In English</h1>
 
- <p>${res.eng}</p>
+ <p class="para">${res.eng}</p>
  <h1>Explaination</h1>
- <p>${res.eng_exp}</p>`)}
+ <p class="para">${res.eng_exp}</p>`)}
  fetchData()
 
  let btn=document.getElementById('btn')
