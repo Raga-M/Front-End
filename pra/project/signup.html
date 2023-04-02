@@ -12,7 +12,7 @@
         }
 
         button {
-            background: linear-gradient(to right, rgb(6, 6, 6), rgb(237, 17, 17));
+            background: linear-gradient(to right, rgb(6, 6, 6), rgb(237, 17, 17), rgb(6, 6, 6));
             color: beige;
             border-radius: 8px;
             font-weight: bold;
@@ -26,7 +26,7 @@
 
         button:hover {
         
-            background: linear-gradient(to right, rgb(237, 17, 17), rgb(6, 6, 6));
+            background: linear-gradient(to right, rgb(237, 17, 17),  rgb(237, 17, 17));
         }
 
         button a {
@@ -37,25 +37,32 @@
         body {
 
          
-            transform: translate(30%, 0);
+            /* transform: translate(30%, 0); */
 
-            background-image: url("image/bg1.avif") ;
-       background-repeat: no-repeat;
-            background-size:100vw 100vh;
-            overflow: hidden;
+            background-image: url("image/art-of-motorcycling-apparel.avif") ;
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
      
          
         }
-       
+       .form{
+      /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    margin-left: 30%;
+    
+}
        
 
         form {
+            
+width: 40vw;
             background-color: black;
-            padding-left: 2%;
-            margin: 0 53% 0 0;
+            padding-left:15%;
+            margin: 0 50% 0 0;
             border-radius: 3%;
-            box-shadow: 8px 8px 6px rgba(254,0,0,0.7);
-            color: rgb(237, 17, 17);
+            box-shadow: 8px 8px 18px rgba(251, 5, 5,0.7);
+            color: rgb(253, 250, 250);
         }
 
         input[type="text"],
@@ -74,66 +81,58 @@
         }
 
 
-    header {
+    .header {
 /* background-color: black; */
-            color:red;
-            margin-right: 73%;
+            color:rgb(4, 4, 4);
+            /* margin-right: 73%; */
             padding-left: 2%;
             border-radius: 4%;
+            text-align: center;
         }
 
         input {
             border-radius: 1.5%;
+             font-size: medium;
+            color: rgb(247, 243, 243);
         }
+        input[type="date"]{
+        color:black;}
 
         a {
             color: white;
         }
 
         ::placeholder {
-            color: rgb(232, 94, 94);
+            color: rgb(253, 250, 250);
         }
 
-        input {
-            font-size: medium;
-            color: red;
-        }
-         @media screen and (max-width:1000px){
-            form {
-       
-             padding-left: 2%;
-             margin: 10% auto;
-             width: 80%; 
-             height: 100vh;
-             border-radius: 60px;
-             box-shadow: 25px 25px 25px rgb(0, 0, 0);
-           
-        } 
-         input{
-             
-            /* margin: 5%; */
-        width: 60%; 
-        
-    }  
-    /* input[type="text"], input[type="password"]{
-    font-size: xxx-large;
-} */
-    a{
-    padding:10px ;
-    font-size: 55px;
-    }
-    button, button a{
-    width: 25%;
-font-size:50px ;
-padding: 15px;
-margin-top: 5% ;
-border-radius: 25px;}
-::placeholder{
-  font-size: 55px;
+         @media screen and (max-width:1000px)
+         {
+            body {
+
+          transform: translate(0, 0); 
+           margin-left: 5rem;
+background-repeat: no-repeat;
+ background-size:65rem 150rem ;
+/* overflow: hidden; */
+
+
 }
-/* h1,h3{
-font-size: 70px;} */
-        } 
+input{
+padding:3% 10%;}
+.form{
+ margin: 2%;
+ 
+ /* display: flex;  */
+}
+form{
+   
+width: 90%;
+/* height: 85vh; */
+
+}
+}
+            
     </style>
 </head>
 
@@ -141,40 +140,42 @@ font-size: 70px;} */
     <header>
     <h1 class="header">Sign Up</h1>
     <h3 class="header">to create a new Royal Enfield account</h3></header>
-    <form class="form">
-        <br><br>
+    <div class="form">
+    <form >
 
 
-        <input type="text" class="name" id="fname" placeholder="First Name" required>&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" class="name" id="lname" placeholder="Last Name" required><br><br>
+
+        <input type="text" class="name" id="fname" placeholder="First Name" required>
+        <input type="text" class="name" id="lname" placeholder="Last Name" required>
 
 
-        <input type="password" class="password" id="password" placeholder="Password" required>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" class="password" id="password" placeholder="Password" required>
 
-        <input type="text" class="password" placeholder="Re enter Password" required><br><br>
-        <label for="gender">Gender</label>
+        <input type="text" class="password" placeholder="Re enter Password" required>
+       <div> <label for="gender">Gender</label>
         <input type="radio" class="name" id="male" name="gender" required><label for="male">Male</label>
-        <input type="radio" class="name" id="female" name="gender" required><label for="female">Female</label><br><br>
+        <input type="radio" class="name" id="female" name="gender" required><label for="female">Female</label></div>
 
-        <input type="tel" class="phone" id="phone" placeholder="Phone Number"><br><br>
-        <label>Date of Birth</label><br>
-        <input type="date" class="date" id="date" placeholder="Date of birth" required><br><br>
-        <label>Do you own a Royal Enfield Motorcycle ?</label><br><br>
+        <input type="tel" class="phone" id="phone" placeholder="Phone Number">
+        <label>Date of Birth</label>
+        <input type="date" class="date" id="date" placeholder="Date of birth" required>
+       <div> <label>Do you own a Royal Enfield Motorcycle ?</label>
         <input type="radio" class="que" id="yes" name="que"><label for="yes">Yes</label>
-        <input type="radio" class="que" id="no" name="que"><label for="no">No</label><br><br>
+        <input type="radio" class="que" id="no" name="que"><label for="no">No</label></div>
 
         <input type="checkbox" id="cb" required><label for="cb"> I accept all <strong><a href="">terms and
                     conditions</a></strong> as
             well as
             <strong><a href="">privacy policy.</a></strong></label> <br><br>
-        <button class="btn" onclick="signUp()">Sign up</button>&nbsp;&nbsp;
-        <button><a href="Royal.html">Home</a></button><br><br>
-    </form>
+       <div> <button class="btn" onclick="signUp()">Sign up</button>
+        <button type="reset">Reset</button>
+    </form></div>
     <script>
         function signUp() {
             alert("sign up successfully")
         }
     </script>
+      <script src="script.js"></script>
 </body>
 
 </html>

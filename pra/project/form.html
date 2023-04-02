@@ -4,44 +4,51 @@
 <head>
 
     <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: lavender;
+        body{
+        background-color: blanchedalmond;
+       }
+        .container {
+            
+            display: flex;
+            justify-content: center;
+            
+            padding: 10px;
+            margin: 0 35%;
+            border-radius: 10px;
+             width: 30%;
+align-items: center;
+background-color: rgba(0,0,0,0.5);
+
         }
-        .container{
+        form{
         display: flex;
-    justify-content: center;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 0 35%;
-    border-radius: 10px  ;
-/* align-content: center;
-align-items: center;*/
-        }
-        h1 {
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+        .formtype {
             color: royalblue;
             text-align: center;
         }
 
-        button {
-            background-color: dodgerblue;
+        button,
+        input[type='submit'] {
+            background-color: rgba(30, 144, 255,0.5);
             color: beige;
             border-radius: 10px;
             font-weight: bold;
-            border-color: dodgerblue;
-            padding: 5px ;
+            border-color: rgba(30, 144, 255,0.5);
+            
+            padding: 5px;
             cursor: pointer;
-       transition: 0.8;
+            transition: 0.5s;
         }
-/* button::before {
-content: '';
-
-background-color: red;
-width:50% ;}
-button::after {
-content: '';
-background-color: black;
-width:50% ;} */
+        button:hover,
+        input[type='submit']:hover{
+        background-color: dodgerblue;}
         input {
             padding: 5px;
             border-radius: 5px;
@@ -55,42 +62,134 @@ width:50% ;} */
             margin-left: 10px;
         }
 
-        /* .form{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 100hv;} */
- a{
-    
-text-decoration: none;
-color: azure;}
-/* .btn{
-    margin-left: 8px;
-    
-    margin-top: 3px;} */
 
+        a {
+
+            text-decoration: none;
+            color: azure;
+        }
+        @media screen and (max-width:1000px) {
+.container{
+    width: 60%;
+    margin: 10% 20%;
+}
+            form label{
+                font-size: 1.5em;
+                /* background-color: black; */
+            }
+            input{
+            font-size: 1.5em;}
+            button{
+            font-size: 1.5em;}
+            
+        }
     </style>
+
 </head>
 
 <body>
-    <h1>Enquiry Form</h1>
+    <header>
+        <img class="logo" src="image/logo" alt="logoimage">
+        <h1 class="heading"><span>R</span>OYAL<span> &nbsp;E</span>NFIELD</h1>
+        <nav class="navbar">
+            <div class='ham'>
+                <div class="bar"></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a> </li>
+                    <li><a href="form.html">Enquiry</a> </li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="login.html">Log In</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="formtype">Royal Enfield Enquiry Form</h1>
     <div class="container">
-    <form class="form" action="#" method="get">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name" id="name" placeholder="Enter the Name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email" placeholder="eg:abc@gmail.com" required><br>
-        <label for="number">Phone Number:</label><br>
-        <input type="tel" name="phone" placeholder="phone number" id="number" required><br>
-      
-        <label for="Question">Questions:</label><br>
-        <textarea id="Question" placeholder="Enter your queries here" rows="4" cols="30"></textarea><br><br>
-        
-        <button>Send</button> 
-        <button class="btn"><a href="Royal.html">Home</a></button>
-    </form>
-</div>
+        <form action="" method="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="model">Model:</label>
+            <select id="model" name="model" required>
+                <option value="">--Please select--</option>
+                <option value="Classic 350">Classic 350</option>
+                <option value="Himalayan">Himalayan</option>
+                <option value="Interceptor 650">Interceptor 650</option>
+                <option value="Continental GT 650">Continental GT 650</option>
+            </select>
+            <label for="message">Message:</label>
+             <textarea id="message" name="message" rows="5" cols="29" placeholder="Type your queries here" required>
+                </textarea>
+                <input class="btn" type="submit" value="Submit">
+                <button class="btn" type="reset">Reset</button>
+        </form>
+
+
+
+    </div>
+    <div class="footer-content">
+        <div class="motorcycle-list">
+            <h4>Motorcycles</h4><br>
+            <ul>
+                <li>Super Metero 650</li>
+                <li>Hunter 350</li>
+                <li>Scrum 411</li>
+                <li>Classic 350</li>
+                <li>Interceptor 650</li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h4>Support</h4><br>
+            <ul>
+                <li><a href="">Stores</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Book a Test Drive</a></li>
+                <li><a href="">Service Center</a></li>
+                <li><a href="">Become a Dealer</a></li>
+                <li><a href="">Distributer</a></li>
+            </ul>
+        </div>
+        <div class="about-us">
+            <h4>About Us </h4><br>
+            <p>Since 1901</p>
+        </div>
+        <div class="media-center">
+            <h4>Media Center</h4><br>
+            <ul>
+                <li>In the press</li>
+                <li>Press Release</li>
+                <li>Product Picture</li>
+                <li>Events</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Location</h4>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9924875021593!2d80.2465223137899!3d12.972332118374577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de206a1096d%3A0x20e3375a0aeea05c!2sRoyal%20Enfield%20Service%20Center%20-%20Company%20Service%20Center!5e0!3m2!1sen!2sin!4v1677591468842!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer-bottom">
+
+        <small>&copy;2023.Royal Enfield All Rights Reserved.| *T&C apply.</small>
+        <small>Private Import Policy | Privacy | Terms & Conditions</small>
+    </div>
+
+
+</footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

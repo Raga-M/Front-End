@@ -12,7 +12,7 @@
 
          .header {
             text-align: center;
-            color: red;
+            color: crimson;
         }
 
         form {
@@ -32,7 +32,7 @@
         }  */
 
         form {
-            background: linear-gradient(to top,rgb(0, 0, 0) ,rgb(117, 116, 116));
+            background: linear-gradient(to top,rgb(0, 0, 0) ,rgb(59, 59, 59));
             padding-left: 2%;
              margin: auto 39%;
             border-radius: 25px;
@@ -41,7 +41,7 @@
         }
 
         a {
-            color: red;
+            color: crimson;
         }
      
 
@@ -52,7 +52,7 @@
             border-right: none;
             border-bottom: 2px solid rgb(250, 247, 247);
             cursor: pointer;
-            color: red;
+            color: crimson;
         }
 
         ::placeholder {
@@ -77,7 +77,7 @@
             padding: 7px;
             cursor: pointer;
             border: 1px solid rgb(244, 26, 2);
-            box-shadow: 2px 2px 1px rgba(237, 203, 203,0.6);
+            box-shadow: 2px 2px 1px rgba(31, 31, 31, 0.6);
 
         }
         ::placeholder {
@@ -94,10 +94,10 @@
         @media screen and (max-width:1000px){
             form {
        
-             padding-left: 2%;
+             padding: 2%;
              margin: 10% auto;
              width: 80%; 
-             height: 70vh;
+             min-height: 50vh;
              border-radius: 60px;
              box-shadow: 25px 25px 25px rgb(0, 0, 0);
            
@@ -127,9 +127,26 @@ h1,h3{
 font-size: 70px;}
         }
     </style>
+     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <header>
+        <img class="logo" src="image/logo" alt="logoimage">
+        <h1 class="heading"><span>R</span>OYAL<span> &nbsp;E</span>NFIELD</h1>
+        <nav class="navbar">
+            <div class='ham'><div class="bar"></div>
+            <ul>
+                <li><a href="Royal.html" >Home</a></li>
+                <li><a href="aboutUs.html">About Us</a> </li>
+                <li><a href="form.html">Enquiry</a> </li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="login.html">Log In</a></li>
+
+            </ul></div>
+        </nav>
+    </header>
     <h1 class="header">LOG IN</h1>
     <h3 class="header">to your Royal Enfield account</h3>
     <form class="form">
@@ -138,21 +155,12 @@ font-size: 70px;}
 
         <input type="password" class="password" id="password" placeholder="Password" required><br>
         <a href="#">Forgot Password ?</a> <br>
-        <a  class="newaccount" href="signup.html">Create New Account!</a><br>
+        <a  class="newaccount" href="signup.html" target="_blank">Create New Account!</a><br>
         <button class="btn" >Login</button><br>
-        <button><a href="Royal.html">Home</a></button><br>
+        <button type="reset">Reset</button><br>
     </form>
-    <script >
-      
-            
-       
-        function login() {
-        
-            alert("Log in sucessfully")
-            
-        }
-
-    </script>
+   
+      <script src="script.js"></script>
 </body>
-
+ 
 </html>
