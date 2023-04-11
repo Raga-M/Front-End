@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-color: black;
+    }
+
+    header {
+        background-color: dodgerblue;
+        padding: 20px;
+        min-width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .about>img {
+        background-image: url("../pra/portfolio/images/img-2.png");
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position:top; */
+
+
+        border: 1px solid crimson;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .about p:last-child {
+        background-color: crimson;
+        width: 40%;
+        padding: 25px 50px;
+
+        border-radius: 0px 120px 0px 90px;
+        color: white;
+        height: auto;
+        margin-top: 20px;
+
+
+    }
+
+    .about>img::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        /* background-color: rgba(0, 0, 0 ); */
+        z-index: -1;
+        transition: 0.9s ease;
+    }
+
+    .about>img:hover::after {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: .3rem;
+        color: white;
+        text-align: center;
+        line-height: 10rem;
+        
+    }
+
+    span {
+        color: crimson;
+    }
+
+    .card h4 {
+
+        text-transform: uppercase;
+        /* text-align: center; */
+        /* font-size: 1rem; */
+    }
+
+    .skills {
+        
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    .card{
+     
+        background-color: rgb(13, 13, 13);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+        gap: 2rem;
+        width: 12%;
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0 0 10px white;
+     
+        transition: 1s ease;
+
+    }
+
+    .card:hover {
+        background-color: white;
+        color: black;
+    }
+
+    img {
+        width: 80%;
+        height: 90%;
+    }
+
+    @media screen and (min-width:200px) and (max-width:800px){
+        .skills{
+            align-items: center;
+        flex-direction: column;
+    gap:2rem}
+    .card {
+    width:30% ;}
+        
+    }
+</style>
+
+<body>
+    <!-- header start -->
+    <header>
+        <h1>PORTFOLIO</h1>
+    </header>
+    <!-- header end -->
+
+    <div class="container">
+        <!-- about us start -->
+        <div id="about">
+            <h1 class="title">About <span>Me</span></h1>
+            <div class="about">
+
+                <img src="" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, dolor dolore repellat earum quos
+                    provident
+                    aliquam voluptates ullam modi dicta.</p>
+            </div>
+        </div>
+        <!-- about us end -->
+
+        <!-- skills start -->
+        <div id="skills">
+            <h1 class="title">my <span>skills</span></h1>
+            <div class="skills">
+                <!-- cards -->
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-html-5-64.png" alt="">
+                    <h4>html</h4>
+                </div>
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-css3-64.png" alt="">
+                    <h4>css</h4>
+                </div>
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-javascript.gif" alt="">
+                    <h4>javascript</h4>
+                </div>
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-bootstrap-48.png" alt="">
+                    <h4>bootstrap</h4>
+                </div>
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-react.gif" alt="">
+                    <h4>react</h4>
+                </div>
+                <div class="card">
+                    <img src="../pra/portfolio/images/icons8-python-100.png" alt="">
+                    <h4>python</h4>
+                </div>
+            </div>
+             <!-- skills end -->
+        </div>
+        <div class="div">
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aperiam vitae cupiditate vero quam non
+                minima laborum ex, id magni. Unde labore esse eos mollitia repellendus nobis accusamus aperiam minima,
+                reiciendis explicabo facere ratione expedita quaerat necessitatibus omnis odio quos atque deserunt ipsam
+                facilis veritatis molestiae? Corporis aspernatur reiciendis omnis consequatur suscipit culpa tempore
+                facilis. Error cum quia deserunt maxime voluptate similique. Aperiam consequuntur beatae quis
+                consequatur. Quos totam voluptatibus, pariatur unde animi reprehenderit! Accusantium fugiat doloribus
+                consequuntur excepturi nihil? Deleniti hic soluta beatae quidem vel voluptas libero ullam. Quae nulla
+                recusandae nemo voluptatem praesentium eligendi, sequi explicabo perspiciatis excepturi!</p>
+        </div>
+    </div>
+</body>
+
+</html>

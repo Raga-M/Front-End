@@ -1,4 +1,5 @@
 <script>
+  function pat(){
 var patient=[];
 var num=prompt("enter the number of patient ")
 for(i=0;i<num;i++){
@@ -16,11 +17,13 @@ for(i=0;i<num;i++){
 document.write("<h3>Total Patient attended </h3> "+"<br>"+JSON.stringify(patient)+"<br>")
 document.write("<h3>Patient with High BP and High Suger Level</h3>")
  
-for(i=0;i<num;i++){
+for(i=0;i<num;i++){   
          p=patient; 
    
        if((p[i].BP>120) && (p[i].SugarBeforeFasting>100 && p[i].SugerAfterBrakeFast>125)){
              document.write("<br>"+JSON.stringify(p[i]))
 }
-  }
+  }}
+  pat();
+  
 </script>

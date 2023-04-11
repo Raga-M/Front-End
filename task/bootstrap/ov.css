@@ -1,0 +1,27 @@
+
+
+.img{
+    height: 100vh;
+position: relative;
+background-color: rgba(0,0,0);
+text-transform: capitalize;
+
+
+}
+img{
+height: 100vh;
+
+object-fit: cover;
+opacity: .8;}
+
+.con{
+position:absolute;
+height: 100%;
+width: 100%;
+top:0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+}

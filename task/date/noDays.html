@@ -1,0 +1,13 @@
+<script>
+    function days(y,m){
+        if(m!=0){
+    d=new Date(y,m,0)
+    days=d.getDate()
+    document.write("  Month  "+ m+" have "+days +" days")
+}
+}
+year=Number(prompt("enter the year"))
+month=Number(prompt("enter the month"))
+   
+   days(year,month)
+</script>

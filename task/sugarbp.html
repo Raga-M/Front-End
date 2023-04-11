@@ -1,0 +1,26 @@
+<script>
+    var patient=[];
+    var num=prompt("enter the number of patient ")
+    for(i=0;i<num;i++){
+        var name=prompt("enter the name")
+        var age=prompt("enter the age")
+        var gender=prompt("enter the genter")
+        var Bp=prompt("enter the BP")
+        var sugarBFfasting=prompt("enter the sugerlevel before fasting")
+        var sugarAferbreakfast=prompt("enter the sugerlevel after breakfast")
+        var date=new Date(prompt("enter the date"))
+        patient.push({Name: name,Age: age,Gender: gender,BP: Bp,SugarBeforeFasting: sugarBFfasting,
+                      SugerAfterBrakeFast: sugarAferbreakfast,AdmissionDate: date});
+        }
+        for(i=0;i<num;i++){
+    console.log((patient[i]))}
+    console.log ("Patient with High BP and High Suger Level")
+     
+    for(i=0;i<num;i++){   
+             p=patient; 
+       
+           if((p[i].BP>120) && (p[i].SugarBeforeFasting>100 && p[i].SugerAfterBrakeFast>125)){
+            console.log((p[i]))
+    }
+      }
+    </script>

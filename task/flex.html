@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            line-height: 100px;
+        }
+
+        /* h1::before{
+        content: "😂 ";}
+        h1::after{
+        content: "  😍";}  */
+        .container {
+            display: flex;
+            background-color: coral;
+            min-height: 80vh;
+            width: 100%;
+            /* justify-content: flex-start; */
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            /* gap:2%; */
+            /* flex-wrap: wrap; */
+           gap:10px;
+        }
+
+        div>p {
+             width: 100px; 
+            height: 100px; 
+          
+            color: white
+        }
+
+        .container p:first-child {
+            background-color: aqua;
+        }
+
+        .container p:last-child {
+            background-color: red;
+        }
+
+        .container p:nth-child(2) {
+            background-color: green;
+        }
+        .container p:nth-child(3) {
+            background-color: rgb(230, 245, 24);
+        }
+        .container p:nth-child(4) {
+            background-color: rgb(245, 42, 24);
+        }
+        .container p:nth-child(5) {
+            background-color: rgb(15, 223, 185);
+        }
+        .container p:nth-child(6) {
+            background-color: rgb(147, 9, 201);
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+    </div>
+</body>
+
+</html>

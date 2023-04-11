@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        p{
+        font-size:120px;
+     font-weight: bolder;
+    }
+     .red{
+    color:red}
+     .blue{
+    color:rgb(19, 19, 224)}
+     .yellow{
+    color:yellow}
+     .green{
+    color:green}
+    .container{
+        height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:25px;
+  }
+  input{
+    height: 45px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 80px;
+    font-size: 20px;
+    border-radius:50px ;
+    border: 2px solid rgb(183, 179, 179);
+    box-shadow:0 0 20px black ;
+   
+ }
+ .fa-solid{
+font-size: 20px;}
+ .input{
+ position: relative;
+    top:0;
+    left: 0;
+ }
+ .icon{
+cursor: pointer;}
+.fa-magnifying-glass{
+    position: absolute;
+top:20%;
+left:3%;}
+
+.fa-microphone{
+    position: absolute;
+    top:20%;
+    right: 9%;
+    background:linear-gradient(180deg,#045ff2 40%,#db4437, #f4b400,green);
+color: transparent !important;
+-webkit-background-clip:text;
+}
+.fa-camera{
+position: absolute;
+top:20%;
+    right: 3%;
+background:linear-gradient(180deg,#0560f2 ,#f81804 40%, #f4b400,green);
+color: transparent !important;
+-webkit-background-clip:text;
+}
+.link a{
+text-decoration: none;
+color:blue;
+}
+.link{
+    height: 100%;
+display: flex;
+justify-content: center;
+gap:90px;
+align-items: center;
+font-weight: bold;
+font-size: x-large;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- text -->
+        <div class="google">
+            <p>
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+            
+            </p>  
+         </div>
+            <div class="input">
+                <input type="text" placeholder="Search google or type URL">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #524f4f;"></i>
+                    <i class="fa-solid fa-microphone" style="color: #000000;"></i>
+                    <i class="fa-solid fa-camera" style="color: #000000;"></i>
+
+                </div>
+                <div class="link">
+                    <a href="">Google Search</a>
+                    <a href="">I'm feeling lucky</a>
+                </div>
+
+            </div>
+            
+
+            </div>
+    </div>
+</body>
+</html>

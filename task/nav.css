@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* navbar style start */
+
+.nav-bar {
+  background-color: black;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  padding: 0px 10px;
+  border: 1.3px solid black;
+
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.nav-bar ul li a:hover {
+  border-color: lawngreen;
+  color: lawngreen;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3%;
+}
+.card img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 5% auto;
+}
+.card:hover {
+  transition: 0.8s ease;
+  background-color: black;
+  color: white;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+form {
+  margin: 0 30%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0px 15px rgba(255, 255, 255, 0.8);
+  border: 2px solid white;
+}
+
+/* hamburger icon */
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  body {
+    font-size: x-large;
+    width: fit-content;
+  }
+  .nav-bar ul li a {
+    display: none;
+  }
+
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .nav-bar .hamburger {
+    width: 60px;
+    height: 60px;
+    /* border: 3px solid white; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.8s ease;
+  }
+  .nav-bar .hamburger.active {
+    z-index: 10;
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 30px;
+  }
+  .nav-bar .hamburger.active ul li a {
+    display: block;
+    font-size: x-large;
+  }
+  .nav-bar .hamburger.active ul {
+    display: flex;
+    height: 100vh ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .nav-bar .hamburger .bar {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+
+    z-index: 2;
+  }
+  .nav-bar .hamburger .bar::after,
+  .nav-bar .hamburger .bar::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    /* transition-property: top, bottom; */
+  }
+  .nav-bar .hamburger .bar::before {
+    bottom: 12px;
+  }
+  .nav-bar .hamburger .bar::after {
+    top: 12px;
+  }
+  .nav-bar .hamburger.active .bar::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .nav-bar .hamburger.active .bar::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .nav-bar .hamburger.active .bar {
+    background-color: transparent;
+  }
+  form {
+    padding: 5%;
+    margin: 0 2% 0 0;
+  }
+  .img{
+  display: none;}
+  .home{
+    background-color: black;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fcontent%2Fimages%2F2022%2F11%2Fhire-full-stack-developers1546507474317-1.gif&f=1&nofb=1&ipt=20f4049c8b7f23e8646631b5ca131fb23b25b8389aa5ca0fcf153c7d0abe0772&ipo=images");
+  opacity: 0.8;
+  background-size:cover;
+
+  
+  
+} 
+}

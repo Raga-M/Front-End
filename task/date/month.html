@@ -1,0 +1,17 @@
+<script>
+    function month(d){
+    const months=['January','February','March','April','May','June','July','August',
+               'September','Octobar','November','December'];
+               
+               date=new Date(d);
+               monthName=date.getMonth();
+               if(monthName<12){
+               document.write(" You enter date is  "+d+" is belongs to month of "+months[monthName]);
+            }
+               else{
+           document.write("enter the wrong date formate");}
+               }
+
+               date=prompt('enter the date "year-month-date"')
+               month(date);
+</script>

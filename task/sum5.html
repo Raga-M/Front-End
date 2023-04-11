@@ -1,0 +1,13 @@
+<script>
+    for (i = 0; i <= 500; i++) {
+        let d = i.toString();
+        let s= new Set(d);
+        if (s.size < d.length) 
+        {
+            let sum = d.split('').reduce((a, n) => a +Number(n), 0)
+            if (sum < 6) {
+                console.log(i)
+            }
+        }
+    }
+</script>
