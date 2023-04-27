@@ -1,0 +1,308 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth;
+}
+.nav-link {
+  text-transform: uppercase;
+}
+header {
+  position: relative;
+  overflow: hidden !important;
+}
+.navbar {
+  display: block !important;
+  overflow-x: hidden !important;
+}
+.nav-link {
+  color: black !important;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #f92965 !important;
+  transform: scale(1.2);
+}
+.container-fluid {
+  position: fixed !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 0%;
+  background-color: rgba(100, 100, 100, 0.2);
+  z-index: 99;
+}
+
+.rightImg {
+  position: absolute;
+  width: 25%;
+  height: 45%;
+  left: 0px;
+  top: 0px;
+
+  z-index: -1;
+}
+.leftImg {
+  position: absolute;
+  width: 42%;
+  height: 49%;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.leftBottomImg {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+.rightBottomImg {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+.rightCenterImg {
+  position: absolute;
+  width: 22%;
+  height: 40%;
+  right: 2%;
+  top: 30%;
+}
+.rightBottom {
+  position: absolute;
+  width: 20%;
+  height: 45%;
+  right: 2%;
+  bottom: 2%;
+}
+.centerBottomImg {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  right: 33%;
+  bottom: 3%;
+}
+.leftCenterImg {
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  left: 0;
+  bottom: -5%;
+}
+span {
+  color: #f92965;
+}
+.btn {
+  color: #f92965;
+  border-color: #f92965;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #f92965;
+  color: white;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.card:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+.imgCard img {
+  position: relative;
+}
+.imgCard img {
+  z-index: 3 !important;
+}
+.linear {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #fac6b9 0%, rgba(255, 255, 255, 0) 100%);
+}
+.linear1 {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #a5d5ca 0%, rgba(255, 255, 255, 0) 100%);
+}
+.linear2 {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #1a3355 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.service {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-img-top {
+  width: 40%;
+  height: 60%;
+}
+.first {
+  color: #fac6b9;
+  padding: 5% 0 !important;
+}
+.second {
+  color: #a5d5ca;
+  padding: 5% 0 !important;
+}
+.third {
+  color: #1a3355;
+  padding: 5% 0 !important;
+}
+
+.card {
+  border-radius: 15px 0 15px 0 !important;
+}
+.title {
+  text-transform: uppercase;
+  color: #f9296f;
+  margin-bottom: 5% !important;
+}
+.about,
+.service,
+.career {
+  margin: 15% 5% !important;
+}
+.about-left {
+  position: relative;
+}
+.animated {
+  margin-left: 20% !important;
+  width: 80%;
+  height: 90%;
+}
+.bg {
+  width: 70%;
+  height: 65%;
+
+  position: absolute;
+  left: 0;
+  top: 30%;
+  z-index: -1;
+}
+.cir{
+  position: absolute;
+  left: 90%;
+  top: -15%;
+}
+
+.about-right > p {
+  text-align: justify !important;
+  padding-right: 10%;
+}
+.about-right {
+  margin-top: 15% !important;
+}
+
+.career-right {
+  position: relative;
+}
+.dots {
+  position: absolute;
+  width: 50%;
+  height: 65%;
+  z-index: -1;
+  top: 8%;
+  right: 0;
+}
+.lap {
+  width: 80%;
+  height: 90%;
+
+  margin-top: -15% !important;
+}
+.company img {
+  width: 80px;
+  height: 80px;
+}
+.customer-card {
+  margin-top: 5% !important;
+}
+.company {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  border-bottom: 5px solid black;
+  margin: 0 20% 5% !important;
+
+}
+.training img {
+  width: 30%;
+  height: 60%;
+}
+.list-unstyled li a {
+  text-decoration: none;
+  color: black;
+}
+form {
+  position: relative;
+}
+form input[type="email"] {
+  width: 90%;
+}
+form input[type="email"] {
+  border-color: #f92965;
+}
+form input[type="email"]:focus {
+  outline: none !important;
+}
+form input[type="submit"] {
+  position: absolute;
+  right: 10.5%;
+  top: 4%;
+  background-color: #f9296f;
+  color: white;
+  border: none;
+}
+.count {
+  width: 90% !important;
+  margin: 10% !important;
+}
+.icon i {
+  background: linear-gradient(90deg, #d94426 0%, #e05079 51.56%, #c9428a 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  padding: 1% !important;
+  border: 2px solid #e05079;
+  cursor: pointer;
+}
+.icon i:hover {
+  background: linear-gradient(90deg, #e7300c 0%, #e40d4a 51.56%, #ed0f85 100%);
+  -webkit-background-clip: text;
+}
+.pink {
+  color: #f9296f;
+}
+.card2 {
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2) !important;
+}
