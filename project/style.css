@@ -279,7 +279,7 @@ form input[type="email"]:focus {
 form input[type="submit"] {
   position: absolute;
   right: 10.5%;
-  top: 4%;
+  top: 5%;
   background-color: #f9296f;
   color: white;
   border: none;
