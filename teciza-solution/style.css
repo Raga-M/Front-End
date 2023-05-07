@@ -1,0 +1,456 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header contact */
+body {
+  background: linear-gradient(to right, #0a2033, #2b2b2b);
+  color: white;
+}
+
+.phone {
+  border-right: 1px solid #c6c6c6;
+}
+.message {
+  border-right: 1px solid #c6c6c6;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
+
+.btn {
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  color: white;
+  font-size: medium;
+}
+.head {
+  width: 60%;
+}
+.row {
+  overflow: hidden !important;
+}
+
+.nav-item a {
+  color: black !important;
+  font-weight: 600;
+  /* transition: all 0.8s ease; */
+}
+.nav-item a:hover,
+.active {
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.card a {
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.card .green {
+  background: #e1fbef;
+}
+.card .yellow {
+  background: #fcf7dd;
+}
+.card .blue {
+  background: #e0eef8;
+}
+.card .purple {
+  background: #f5e4fe;
+}
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.about-contact li,
+.robotic-desc li {
+  list-style: url("images/tick.png");
+}
+
+.card .img {
+  position: relative;
+}
+
+.card .img .bot,
+.card .img .bg {
+  position: absolute;
+}
+.card .img .bg {
+  left: 7%;
+}
+.card .img .bg {
+  z-index: 1;
+}
+.card .img .bot {
+  z-index: 3;
+}
+.serviceImg {
+  background: url("images/serviceImg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.serviceImg > p {
+  margin: 0 20%;
+}
+.testimonials .img{
+background-color: #E7E5FF;
+border-radius: 50%;
+padding: 10px;
+width: 40px;
+height: 40px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #ffff;
+  bottom: -12%;
+  left:20%;
+}
+
+.arrow{
+width: 4%;
+cursor: pointer;}
+.newsletter {
+  background: url("images/newletterBG.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.newsletter .input {
+  position: relative;
+}
+.newsletter .input input {
+  width: 55%;
+  height: 10vh;
+  padding: 20px;
+  border-radius: 100px;
+  padding-right: 170px;
+}
+.newsletter .input .btn1 {
+  position: absolute;
+  right: 25%;
+  top: 28%;
+  border-radius: 100px;
+  padding: 5px 20px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer ul li::before {
+  content: "\2022";
+  display: inline-block;
+  margin-left: -1em;
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 0.2em 0.5em;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.icon .fa-brands {
+  padding: 10px;
+  font-size: 30px;
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* main contact */
+.contact-main,
+.service-main,
+.about-main,
+.industrial-main {
+  background: url("images/newletterBG.png") no-repeat;
+  background-size: 100% 100%;
+  height: 70vh;
+}
+.contact1 > p,
+.service1 > p,
+.about1 > p {
+  margin: 0 15%;
+}
+.contact-card {
+  margin: 0 2%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  font-size: small;
+  font-weight: 600;
+}
+.contact-bg {
+  position: relative;
+  height: 40vh;
+
+  border-radius: 20px;
+  margin: 0 10%;
+  z-index: 10;
+}
+.contact-bg .contact-card{
+position: absolute;
+top:-10%;
+padding: 30px;
+width: 96%;
+}
+.contact-card .fa-solid {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: large;
+}
+.contact-card .icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 200, 0.2);
+}
+form {
+  width: 40%;
+}
+.input,
+textarea {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+input[type="checkbox"],
+form button {
+  margin-top: 20px;
+}
+iframe {
+  width: 600px;
+  height: 300px;
+}
+
+.indus-para {
+  width: 35%;
+}
+.industry img {
+  width: 25%;
+}
+.award {
+  background: url("images/image\ 19.png") no-repeat;
+
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50vh;
+}
+.overlay {
+  height: 50vh;
+  margin-left: 50%;
+  padding: 20px;
+  background: rgba(7, 10, 53, 0.8);
+}
+.project {
+  position: relative;
+}
+.project-main img {
+  width: 90%;
+}
+.project .details {
+  padding-top: 20%;
+  background: rgba(7, 10, 53, 0.8);
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.solution img {
+  height: 100%;
+}
+
+.heading img {
+  width: 8%;
+}
+.robotic-left-container img {
+  width: 105%;
+  height: 80vh;
+}
+.robotic-desc img {
+  width: 50%;
+}
+.robotic-right-container .service {
+  background: linear-gradient(
+    180deg,
+    rgba(43, 56, 143, 0.8) 0%,
+    rgba(37, 165, 221, 0.8) 50%,
+    rgba(43, 56, 143, 0.8) 100%
+  );
+  border-radius: 5px;
+  width: 450px;
+  padding: 30px 20px;
+  transition: 0.5 ease;
+}
+/* .robotic-right-container .service li:hover{
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+} */
+.search input {
+  border-radius: 5px;
+  width: 100%;
+  height: 7vh;
+  padding: 10px;
+}
+.search {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(43, 56, 143, 0.8) 0%,
+    rgba(37, 165, 221, 0.8) 50%,
+    rgba(43, 56, 143, 0.8) 100%
+  );
+  padding: 20px;
+  border-radius: 5px;
+}
+.search .fa-solid {
+  position: absolute;
+  top: 40%;
+  right: 8%;
+}
+/* .sliders{
+display: n;} */
+.box{
+  transition: 0.5s ease;
+transform: scale(1.1);}
+.robotic-desc img {
+  width: 46%;
+}
+
+/* .slider-container{
+width: 100%;}
+.slider{
+width: 100%;
+transition: transform .5s ease;}
+.slides{
+width: 33.33%;} */
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  header .contact{
+  font-size: 8px;}
+  
+  
+  .logo {
+    width: 100px;
+    height: 30px;
+  }
+  .landing-content {
+    width: 100% !important;
+    margin-top: 30px;
+  }
+  .landing-content > h1 {
+    width: 75% !important;
+  }
+  .about-contact {
+    width: 100% !important;
+    margin-top: 30px;
+  }
+  .about-image img {
+    width: 150%;
+    margin-left: 25%;
+  }
+  .serviceImg > p {
+    margin: 0 5%;
+  }
+  .newsletter {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .newsletter .input .btn1 {
+    padding: 5px !important;
+  }
+  .newsletter .input input {
+    width: 100%;
+    padding-right: 100px;
+  }
+  .newsletter .input .btn1 {
+    position: absolute;
+    right: 5%;
+    top: 24%;
+  }
+  .contact1 > p.service1 > p,
+  .about1 > p {
+    margin: 0 2%;
+  }
+  form {
+    width: 80%;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .indus-para {
+    width: 100%;
+    padding: 5%;
+    text-align: justify;
+  }
+  .industry img {
+    width: 100%;
+    padding: 10%;
+  }
+  .overlay {
+    margin-left: 30%;
+    height: 70vh;
+    width: 70% !important;
+  }
+  .award {
+    height: 70vh;
+  }
+  .solution img {
+    height: 50%;
+    width: 100%;
+  }
+  /* .testimonials .slider-container .card{
+  width: 33%;} 
+.testimonials .slider-container{
+font-size: 10px;}
+.card-body img{
+width: 10%;} */
+
+.arrow{
+width: 10%;}
+  footer {
+    font-size: 12px;
+  }
+  footer small {
+    font-size: 10px;
+  }
+  
+
+.robotic-right-container .service {
+width: auto;}
+  .contact-bg {
+  height: 110vh;}
+  .contact-bg .contact-card{
+  top:-1%}
+}
