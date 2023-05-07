@@ -387,17 +387,19 @@ width: 33.33%;} */
 
   .newsletter .input .btn1 {
     padding: 5px !important;
+    font-size: 12px;
   }
   .newsletter .input input {
     width: 100%;
-    padding-right: 100px;
+    height: 50px;
+    padding-right: 110px;
   }
   .newsletter .input .btn1 {
     position: absolute;
-    right: 5%;
-    top: 50%;
+    right: 8%;
+    top: 30%;
   }
-  .contact1 > p.service1 > p,
+  .contact1 > p,.service1 > p,
   .about1 > p {
     margin: 0 2%;
   }
@@ -446,11 +448,23 @@ width: 10%;}
     font-size: 10px;
   }
   
+  .project-main img {
+
+    width:95vw;
+    height: 50vh;
+}
+
+
+.project .details {
+width: 100%;
+}
 
 .robotic-right-container .service {
 width: auto;}
   .contact-bg {
-  height: 110vh;}
+  height: 100vh;
+width: 90%;}
   .contact-bg .contact-card{
-  top:-1%}
+  top:-3%;
+}
 }
