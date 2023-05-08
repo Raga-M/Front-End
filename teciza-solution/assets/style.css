@@ -1,3 +1,8 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600&display=swap');
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +13,7 @@
 body {
   background: linear-gradient(to right, #0a2033, #2b2b2b);
   color: white;
+  font-family: 'Jost', sans-serif;
 }
 
 .phone {
@@ -79,7 +85,7 @@ body {
 }
 
 .about-contact li,
-.robotic-desc li {
+.robotic-desc li ,.term li{
   list-style: url("images/tick.png");
 }
 
@@ -152,22 +158,14 @@ cursor: pointer;}
   padding: 5px 20px;
 }
 
-footer ul {
-  list-style-type: none;
+footer ul li {
+
+  padding: 1em 0.5em;
 }
-footer ul li::before {
-  content: "\2022";
-  display: inline-block;
-  margin-left: -1em;
-  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  padding: 0.2em 0.5em;
-  font-weight: bolder;
-  font-size: 25px;
-}
+
+
+footer ul li::marker{
+color: #25a5dd;}
 .icon .fa-brands {
   padding: 10px;
   font-size: 30px;
@@ -353,6 +351,19 @@ width: 100%;
 transition: transform .5s ease;}
 .slides{
 width: 33.33%;} */
+
+
+footer a{
+text-decoration: none;
+color: black;
+transition: .5s ease;}
+footer a:hover{
+  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 @media screen and (min-width: 200px) and (max-width: 800px) {
   header .contact{
   font-size: 8px;}
@@ -462,7 +473,7 @@ width: 100%;
 .robotic-right-container .service {
 width: auto;}
   .contact-bg {
-  height: 100vh;
+  height: 550px;
 width: 90%;}
   .contact-bg .contact-card{
   top:-3%;
