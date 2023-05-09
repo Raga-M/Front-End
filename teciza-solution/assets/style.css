@@ -1,7 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;600&display=swap");
 
 * {
   padding: 0;
@@ -13,7 +10,7 @@
 body {
   background: linear-gradient(to right, #0a2033, #2b2b2b);
   color: white;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .phone {
@@ -29,9 +26,14 @@ body {
 }
 
 .btn {
-  background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
+  background: linear-gradient(to bottom, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
   color: white;
   font-size: medium;
+  transition: background 5s ease-in-out;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #25a5dd 0%, #2b388f 50%, #25a5dd 100%);
+  color: rgb(255, 255, 255) !important;
 }
 .head {
   width: 60%;
@@ -39,7 +41,8 @@ body {
 .row {
   overflow: hidden !important;
 }
-
+.card{
+cursor: pointer;}
 .nav-item a {
   color: black !important;
   font-weight: 600;
@@ -62,17 +65,35 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+.card a:hover {
+  background: linear-gradient(180deg,  #25a5dd 0%, #2b388f 50%,#25a5dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 .card .green {
   background: #e1fbef;
+  border-radius: 10px;
 }
 .card .yellow {
   background: #fcf7dd;
+  border-radius: 10px;
 }
 .card .blue {
   background: #e0eef8;
+  border-radius: 10px;
 }
 .card .purple {
   background: #f5e4fe;
+  border-radius: 10px;
+}
+.tec .card {
+  position: relative;
+  transition: 0.5s ease;
+}
+.tec .card:hover {
+  transform: translatey(-5px);
 }
 .title {
   font-weight: bold;
@@ -85,7 +106,8 @@ body {
 }
 
 .about-contact li,
-.robotic-desc li ,.term li{
+.robotic-desc li,
+.term li {
   list-style: url("../images/tick.png");
 }
 
@@ -105,7 +127,27 @@ body {
 }
 .card .img .bot {
   z-index: 3;
+  transition: transform 0.5s ease-in-out;
 }
+.card:hover .img .bot {
+  transform: translateY(-15px);
+}
+
+.industrial .card {
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.industrial .card:hover {
+  transform: scale(1.04);
+}
+.industrial .card img {
+  transition: transform 0.5s ease;
+}
+
+.industrial .card:hover img {
+  transform: scale(1.1);
+}
+
 .serviceImg {
   background: url("../images/serviceImg.png") no-repeat;
   background-size: 100% 100%;
@@ -113,12 +155,12 @@ body {
 .serviceImg > p {
   margin: 0 20%;
 }
-.testimonials .img{
-background-color: #E7E5FF;
-border-radius: 50%;
-padding: 10px;
-width: 40px;
-height: 40px;
+.testimonials .img {
+  background-color: #e7e5ff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .triangle {
@@ -129,12 +171,13 @@ height: 40px;
   border-right: 20px solid transparent;
   border-top: 40px solid #ffff;
   bottom: -12%;
-  left:20%;
+  left: 20%;
 }
 
-.arrow{
-width: 4%;
-cursor: pointer;}
+.arrow {
+  width: 4%;
+  cursor: pointer;
+}
 .newsletter {
   background: url("../images/newletterBG.png") no-repeat;
   background-size: 100% 100%;
@@ -159,13 +202,12 @@ cursor: pointer;}
 }
 
 footer ul li {
-
-  padding: 1em 0.5em;
+  padding: 0.5em;
 }
 
-
-footer ul li::marker{
-color: #25a5dd;}
+footer ul li::marker {
+  color: #25a5dd;
+}
 .icon .fa-brands {
   padding: 10px;
   font-size: 30px;
@@ -205,11 +247,11 @@ color: #25a5dd;}
   margin: 0 10%;
   z-index: 10;
 }
-.contact-bg .contact-card{
-position: absolute;
-top:-10%;
-padding: 30px;
-width: 96%;
+.contact-bg .contact-card {
+  position: absolute;
+  top: -10%;
+  padding: 30px;
+  width: 96%;
 }
 .contact-card .fa-solid {
   display: flex;
@@ -337,9 +379,10 @@ iframe {
 }
 /* .sliders{
 display: n;} */
-.box{
+.box {
   transition: 0.5s ease;
-transform: scale(1.1);}
+  transform: scale(1.1);
+}
 .robotic-desc img {
   width: 46%;
 }
@@ -352,23 +395,46 @@ transition: transform .5s ease;}
 .slides{
 width: 33.33%;} */
 
-
-footer a{
-text-decoration: none;
-color: black;
-transition: .5s ease;}
-footer a:hover{
+footer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease;
+}
+footer a:hover {
   background: linear-gradient(180deg, #2b388f 0%, #25a5dd 50%, #2b388f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-@media screen and (min-width: 200px) and (max-width: 800px) {
-  header .contact{
-  font-size: 8px;}
-  
-  
+.footer-img {
+  animation: rotate 8s linear infinite alternate;
+  -webkit-animation: rotate 8s linear infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(150px);
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  header .contact {
+    font-size: 0.55rem;
+    font-weight: 600;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translatex(0);
+    }
+    100% {
+      transform: translatex(70px);
+    }
+  }
+
   .logo {
     width: 100px;
     height: 30px;
@@ -410,7 +476,8 @@ footer a:hover{
     right: 8%;
     top: 30%;
   }
-  .contact1 > p,.service1 > p,
+  .contact1 > p,
+  .service1 > p,
   .about1 > p {
     margin: 0 2%;
   }
@@ -450,32 +517,64 @@ font-size: 10px;}
 .card-body img{
 width: 10%;} */
 
-.arrow{
-width: 10%;}
+  .arrow {
+    width: 10%;
+  }
   footer {
     font-size: 12px;
   }
   footer small {
     font-size: 10px;
   }
-  
+
   .project-main img {
-
-    width:95vw;
+    width: 95vw;
     height: 50vh;
-}
+  }
 
+  .project .details {
+    width: 100%;
+  }
 
-.project .details {
-width: 100%;
-}
-
-.robotic-right-container .service {
-width: auto;}
+  .robotic-right-container .service {
+    width: auto;
+  }
   .contact-bg {
-  height: 550px;
-width: 90%;}
-  .contact-bg .contact-card{
-  top:-3%;
+    height: 550px;
+    width: 90%;
+  }
+  .contact-bg .contact-card {
+    top: -3%;
+  }
 }
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  header .contact {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .logo {
+    width: 180px;
+    height: 50px;
+  }
+  .landing-content {
+    width: 100% !important;
+    margin-top: 40px;
+  }
+  .about-contact {
+    width: 100% !important;
+    margin-top: 20px;
+  }
+  .about-image img {
+    width: 100%;
+    margin-left: 50%;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: translatex(0);
+    }
+    100% {
+      transform: translatex(150px);
+    }
+  }
 }
