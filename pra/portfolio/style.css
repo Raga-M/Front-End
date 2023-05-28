@@ -112,7 +112,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
   transform: scale(0.8);
   margin-right: 20px;
@@ -294,6 +294,7 @@ p {
   opacity: 0.8;
   z-index: -1;
 } 
+
 #skills .skill-content .icon {
   height: 80px;
   width: 80px;
@@ -310,7 +311,8 @@ p {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
+#skills .skill-item{
+box-shadow: 5px 5px 20px black;}
 #project .project {
   flex-direction: column;
   max-width: 1200px;
@@ -336,6 +338,13 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
+.project-info a{
+color:white;
+text-decoration: underline;
+font-size: 18px;
+transition: 0.5s ease;}
+.project-info a:hover{
+color: crimson;}
 #project .project-info {
   padding: 30px;
   flex-basis: 50%;
