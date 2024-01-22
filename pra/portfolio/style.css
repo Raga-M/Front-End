@@ -338,13 +338,35 @@ box-shadow: 5px 5px 20px black;}
   overflow: hidden;
   border-radius: 10px;
 }
-.project-info a{
+/* .project-info a{
 color:white;
 text-decoration: underline;
 font-size: 18px;
 transition: 0.5s ease;}
 .project-info a:hover{
-color: crimson;}
+color: crimson;} */
+.btn1 {
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: rgb(234, 65, 98);
+  /* border: 2px solid crimson; */
+  font-size: 1.3rem;
+  border-radius: 5px;
+
+  transition:all .5s ease;
+}
+.btn1:hover{
+transform: scale(0.95);
+background-color:crimson;
+
+}
+.flex{
+display: flex;
+gap: 10px;
+margin-top: 8px;
+
+}
 #project .project-info {
   padding: 30px;
   flex-basis: 50%;
@@ -456,7 +478,9 @@ color: #fff;}
   color: crimson;
   
 }
-
+.mt-3{
+margin-top: 10px;
+}
 #about .col-right .btn:hover,.btn:hover {
   color: white;
   background-color: crimson;
