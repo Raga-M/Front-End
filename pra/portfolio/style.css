@@ -301,8 +301,7 @@ p {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
-  /* border: 2px solid black; */
-  /* border-radius: .5rem ; */
+
   z-index: -0.9;
 }
 #skills .skill-item h2 {
@@ -310,6 +309,14 @@ p {
   color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+#skills .skill-item p{
+text-align: justify;
+
+letter-spacing:.08rem;
+line-height: 2rem;
+white-space: .5rem;
+
 }
 #skills .skill-item{
 box-shadow: 5px 5px 20px black;}
@@ -522,6 +529,14 @@ margin-top: 10px;
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 500;
+}
+#contact .link{
+color: #000;
+padding-bottom: 10px;
+transition: all .5s ease-in;
+}
+#contact .link:hover{
+color: crimson;
 }
 #contact .contact-item:hover {
   box-shadow: 0 0 6px 0 #0000004c;
